@@ -18,6 +18,7 @@ function Home() {
     };
 
     window.addEventListener("scroll", onScroll);
+    //remove listerner when unmount
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
@@ -40,8 +41,22 @@ function Home() {
             >
               Home
             </Nav.Link>
-            <Nav.Link href="#link">Skills</Nav.Link>
-            <Nav.Link href="#link">Projects</Nav.Link>
+            <Nav.Link
+              href="#link"
+              className={
+                activeLink === "home" ? "active navbar-link" : "navbar-link"
+              }
+            >
+              Skills
+            </Nav.Link>
+            <Nav.Link
+              href="#link"
+              className={
+                activeLink === "home" ? "active navbar-link" : "navbar-link"
+              }
+            >
+              Projects
+            </Nav.Link>
           </Nav>
           <span className="navbar-text">
             <div className="social-icon">
