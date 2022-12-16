@@ -28,7 +28,7 @@
       background-color: aqua;
     }
   }
-  .toggle-button {
+  .mobile-menu-icon {
     position: absolute;
     top: 0.75rem;
     right: 1rem;
@@ -44,8 +44,8 @@
       border-radius: 10px;
     }
   }
-  @media (max-width: 1000px) {
-    .toggle-button {
+  @media only screen and (max-width: 1024px) {
+    .mobile-menu-icon {
       display: flex;
     }
     .navbar-links {
@@ -55,7 +55,7 @@
   }
 }
 
-@media (max-width: 1000px) {
+@media only screen and (max-width: 1024px) {
   .nav-container {
     flex-direction: column;
     align-items: flex-start;

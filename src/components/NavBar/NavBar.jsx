@@ -1,34 +1,41 @@
-import React from "react";
+import React, { useState } from "react";
 import "./NavBar.styles.scss";
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faXmark, faBars } from "@fortawesome/free-solid-svg-icons";
 function NavBar() {
+  const [Mobile, setMobile] = useState(false);
   return (
-    <div>
-      <nav className="nav-container">
-        <div className="logo">Logo</div>
-        <a href="#" className="toggle-button">
-          <span className="bar"></span>
-          <span className="bar"></span>
-          <span className="bar"></span>
-        </a>
-        <div className="navbar-links">
-          <ul>
-            <li>
-              <a href="#">Home</a>
-            </li>
-            <li>
-              <a href="#">About</a>
-            </li>
-            <li>
-              <a href="#">Project</a>
-            </li>
-            <li>
-              <a href="#">Contact</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </div>
+    <nav className="nav-container">
+      <div className="logo">Logo</div>
+      <a href="#" className="toggle-button">
+        <span className="bar"></span>
+        <span className="bar"></span>
+        <span className="bar"></span>
+      </a>
+      <div className="navbar-links">
+        <ul>
+          <li>
+            <a href="#">Home</a>
+          </li>
+          <li>
+            <a href="#">About</a>
+          </li>
+          <li>
+            <a href="#">Project</a>
+          </li>
+          <li>
+            <a href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+      <button className="mobile-menu-icon">
+        {Mobile ? (
+          <FontAwesomeIcon icon={faXmark} />
+        ) : (
+          <FontAwesomeIcon icon={faBars} />
+        )}
+      </button>
+    </nav>
   );
 }
 
