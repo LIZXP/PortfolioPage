@@ -1,9 +1,9 @@
-import "./App.css";
+import "./App.scss";
 import NavBar from "./components/NavBar/NavBar";
 
 function App() {
   return (
-    <div className="App" class="m-0 p-0 box-border">
+    <div className="App">
       <NavBar />
     </div>
   );
