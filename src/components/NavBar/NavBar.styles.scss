@@ -16,8 +16,37 @@
       list-style: none;
       a {
         text-decoration: none;
-        color: whitesmoke;
+        color: black;
+        padding: 1rem;
+        display: block;
       }
+    }
+    li:hover {
+      background-color: aqua;
+    }
+  }
+  .toggle-button {
+    position: absolute;
+    top: 0.75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 31px;
+    height: 21px;
+    .bar {
+      height: 3px;
+      width: 100%;
+      background-color: black;
+      border-radius: 10px;
+    }
+  }
+  @media (max-width: 1000px) {
+    .toggle-button {
+      display: flex;
+    }
+    .navbar-links {
+      // display: none;
     }
   }
 }

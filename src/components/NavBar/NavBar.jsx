@@ -6,6 +6,11 @@ function NavBar() {
     <div>
       <nav className="nav-container">
         <div className="logo">Logo</div>
+        <a href="#" className="toggle-button">
+          <span className="bar"></span>
+          <span className="bar"></span>
+          <span className="bar"></span>
+        </a>
         <div className="navbar-links">
           <ul>
             <li>
