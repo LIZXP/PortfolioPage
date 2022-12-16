@@ -3,16 +3,11 @@ import "./NavBar.styles.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faXmark, faBars } from "@fortawesome/free-solid-svg-icons";
 function NavBar() {
-  const [Mobile, setMobile] = useState(false);
+  const [mobile, setMobile] = useState(false);
   return (
     <nav className="nav-container">
       <div className="logo">Logo</div>
-      <a href="#" className="toggle-button">
-        <span className="bar"></span>
-        <span className="bar"></span>
-        <span className="bar"></span>
-      </a>
-      <div className="navbar-links">
+      <div className={mobile ? "navbar-links-mobile" : "navbar-links"}>
         <ul>
           <li>
             <a href="#">Home</a>
@@ -29,7 +24,7 @@ function NavBar() {
         </ul>
       </div>
       <button className="mobile-menu-icon">
-        {Mobile ? (
+        {mobile ? (
           <FontAwesomeIcon icon={faXmark} />
         ) : (
           <FontAwesomeIcon icon={faBars} />
