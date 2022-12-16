@@ -1,13 +1,29 @@
 import React from "react";
+import "./NavBar.styles.scss";
 
 function NavBar() {
   return (
-    //this div is for the main container
     <div>
-      <div className="Nav-container"></div>
+      <nav className="nav-container">
+        <div className="logo">Logo</div>
+        <div className="navbar-links">
+          <ul>
+            <li>
+              <a href="#">Home</a>
+            </li>
+            <li>
+              <a href="#">About</a>
+            </li>
+            <li>
+              <a href="#">Project</a>
+            </li>
+            <li>
+              <a href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
     </div>
-    // will be add 2 ul and 3 li for the main content
-    // will be using type writer for the type effect in here
   );
 }
 
