@@ -1,9 +1,9 @@
 import "./App.css";
 import NavBar from "./components/NavBar/NavBar";
-
+import "bootstrap/dist/css/bootstrap.min.css";
 function App() {
   return (
-    <div className="App" class="m-0 p-0 box-border">
+    <div className="App">
       <NavBar />
     </div>
   );
