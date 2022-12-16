@@ -1,1 +1,23 @@
-
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: black;
+  .logo {
+    font-size: 1.5rem;
+  }
+  .navbar-links {
+    ul {
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+    li {
+      list-style: none;
+      a {
+        text-decoration: none;
+        color: whitesmoke;
+      }
+    }
+  }
+}
