@@ -13,7 +13,7 @@ function NavBar() {
       <div>
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          className="h-40 mt-5"
+          className="h-40 mt-5 pl-20 hover:scale-105 duration-200"
           version="1.0"
           viewBox="0 0 2363 2363"
         >
@@ -24,10 +24,10 @@ function NavBar() {
           </g>
         </svg>
       </div>
-      <ul className="hidden md:flex">
+      <ul className="hidden md:flex pr-72">
         {links.map(({ link }, i) => (
           <li
-            className="px-4 cursor-pointer capitalize font-medium text-black hover:scale-105 duration-200"
+            className="px-4 cursor-pointer capitalize font-medium text-black font-black hover:scale-105 duration-200 text-4xl "
             key={i}
           >
             {link}
@@ -41,7 +41,7 @@ function NavBar() {
         {nav ? <FaTimes size={30} /> : <FaBars size={30} />}
       </div>
       {nav && (
-        <ul className="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-gradient-to-b from-white to-gray-800 text-black-500">
+        <ul className="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-gradient-to-b from-yellow-200 via-green-200 to-green-300 text-black font-black">
           {links.map(({ link }, i) => (
             <li
               className="px-4 cursor-pointer capitalize py-4 text-2xl"
