@@ -18,7 +18,7 @@ function Main() {
       name="home"
     >
       <div className="mx-auto px-4 flex flex-col items-center justify-center h-full text-black md:flex-row max-w-screen-2xl">
-        <div className="flex flex-col justify-center h-full max-w-screen-sm">
+        <div className="flex flex-col justify-center px-6 h-2/4 max-w-screen-lg md:w-2/4">
           <h2 className="text-5xl md:text-7xl font-bold pb-5">
             I am a Full Stack Developer
           </h2>
@@ -39,7 +39,7 @@ function Main() {
             </button>
           </div>
         </div>
-        <div>
+        <div className="max-w-screen-lg px-6 md:w-2/4">
           <img src={mtm} alt="evolution monkey to man picture" />
         </div>
       </div>
