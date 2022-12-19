@@ -13,7 +13,7 @@ function NavBar() {
       <div>
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          className="h-40 mt-5 pl-20 hover:scale-105 duration-200"
+          className="h-40 mt-5 md:pl-20 hover:scale-105 duration-200 "
           version="1.0"
           viewBox="0 0 2363 2363"
         >
