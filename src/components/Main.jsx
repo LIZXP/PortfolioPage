@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import background from "../assets/bg.svg";
 import { HiArrowNarrowRight } from "react-icons/hi";
 import mtm from "../assets/eve.svg";
 import "./title.scss";
+import Typewriter from "typewriter-effect";
 
 function Main() {
   return (
@@ -18,13 +19,22 @@ function Main() {
       }}
       name="home"
     >
-      <div className="mx-auto px-4 flex flex-col items-center justify-center h-full md:flex-row">
+      <div className="mx-auto px-4 flex flex-col items-center justify-center pt-36 md:flex-row md:h-full">
         <div className="flex flex-col justify-center px-6 h-1/4 max-w-screen-lg md:w-2/5">
           <h1 className="text-5xl md:text-6xl font-bold" id="title">
             Hola, I'am Peter, <br />
-            <span id="full-stack">a Full Stack Developer</span>
+            <span id="full-stack">
+              <Typewriter
+                onInit={(typewriter) => {
+                  typewriter.typeString("A Full Stack Developer").start();
+                }}
+                options={{
+                  cursor: "",
+                }}
+              />
+            </span>
           </h1>
-          <p className="font-semibold pt-8 pb-6 text-white">
+          <p className="font-semibold pt-8 pb-6 text-white text-justify">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis
             mollitia veniam, quod, ab qui in quisquam, et impedit unde
             accusantium pariatur at. Magni temporibus voluptatum perspiciatis
