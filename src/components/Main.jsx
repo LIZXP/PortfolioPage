@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React from "react";
 import background from "../assets/bg.svg";
 import { HiArrowNarrowRight } from "react-icons/hi";
 import mtm from "../assets/eve.svg";
@@ -41,15 +41,15 @@ function Main() {
             earum dolorum ipsam harum!
           </p>
           <div>
-            <button className="text-white">
+            <button className="w-fit px-6 py-3 my-2 flex items-center rounded-md cursor-pointer group bg-gradient-to-r from-[#fba2a2] to-[#f87171] text-xl text-white font-extrabold">
               Projects
-              <span>
-                <HiArrowNarrowRight />
+              <span className="group-hover:rotate-90 duration-300">
+                <HiArrowNarrowRight size={18} className="ml-2" />
               </span>
             </button>
           </div>
         </div>
-        <div className="max-w-screen-lg px-6 md:w-1/4">
+        <div className="max-w-screen-lg w-fit md:w-1/4 md:items-center">
           <img src={mtm} alt="evolution monkey to man" />
         </div>
       </div>
