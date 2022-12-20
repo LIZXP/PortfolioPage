@@ -1,0 +1,18 @@
+#title {
+  color: #33e1ed;
+  letter-spacing: 1px;
+}
+#title #full-stack {
+  color: white;
+  // text-shadow: 0 0 5px #f9e, 0 0 10px #f9e, 0 0 20px #f9e, 0 0 40px #f9e,
+  //   0 0 80px #f9e;
+  animation: glow 1.5s ease-in-out infinite alternate-reverse;
+}
+@keyframes glow {
+  from {
+    text-shadow: 0 0 20px #ef6d65;
+  }
+  to {
+    text-shadow: 0 0 20px #ef6d65, 0 0 40px #ef6d65, 0 0 80px #ef6d65;
+  }
+}
