@@ -19,18 +19,19 @@ function Main() {
       name="home"
     >
       <div className="mx-auto px-4 flex flex-col items-center justify-center h-full md:flex-row">
-        <div className="flex flex-col justify-center px-6 h-1/4 max-w-screen-lg md:w-2/4">
-          <h1 className="text-5xl md:text-7xl font-bold" id="title">
-            Hola, I'am Peter,<span id="full-stack">a Full Stack Developer</span>
+        <div className="flex flex-col justify-center px-6 h-1/4 max-w-screen-lg md:w-2/5">
+          <h1 className="text-5xl md:text-6xl font-bold" id="title">
+            Hola, I'am Peter, <br />
+            <span id="full-stack">a Full Stack Developer</span>
           </h1>
-          <p className="font-semibold pt-8 pb-6">
+          <p className="font-semibold pt-8 pb-6 text-white">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis
             mollitia veniam, quod, ab qui in quisquam, et impedit unde
             accusantium pariatur at. Magni temporibus voluptatum perspiciatis
             earum dolorum ipsam harum!
           </p>
           <div>
-            <button>
+            <button className="text-white">
               Projects
               <span>
                 <HiArrowNarrowRight />
