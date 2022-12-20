@@ -1,0 +1,16 @@
+#title {
+  color: white;
+  letter-spacing: 1px;
+}
+#title #full-stack {
+  color: #f87171;
+  animation: glow 1.5s ease-in-out infinite alternate-reverse;
+}
+@keyframes glow {
+  from {
+    text-shadow: 0 0 2px #f87171;
+  }
+  to {
+    text-shadow: 0 0 10px #f87171;
+  }
+}

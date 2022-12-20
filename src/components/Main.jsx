@@ -2,6 +2,8 @@ import React from "react";
 import background from "../assets/bg.svg";
 import { HiArrowNarrowRight } from "react-icons/hi";
 import mtm from "../assets/eve.svg";
+import "./title.scss";
+import Typewriter from "typewriter-effect";
 
 function Main() {
   return (
@@ -17,30 +19,38 @@ function Main() {
       }}
       name="home"
     >
-      <div className="mx-auto px-4 flex flex-col items-center justify-center h-full text-black md:flex-row max-w-screen-2xl">
-        <div className="flex flex-col justify-center px-6 h-2/4 max-w-screen-lg md:w-2/4">
-          <h2 className="text-5xl md:text-7xl font-bold pb-5">
-            I am a Full Stack Developer
-          </h2>
-          <p className="text-black py-4 text-justify font-medium">
-            With a unique blend of technical expertise and real-world business
-            experience. My skills include proficiency in a variety of languages
-            and frameworks, as well as experience working with systems and SQL
-            and NoSQL databases. I am passionate about using my skills to
-            streamline and automate processes in apps, saving users time and
-            prioritizing focus on business functions.
+      <div className="mx-auto px-4 flex flex-col items-center justify-center pt-36 md:flex-row md:h-full">
+        <div className="flex flex-col justify-center px-6 h-1/4 max-w-screen-lg md:w-2/5">
+          <h1 className="text-5xl md:text-6xl font-bold" id="title">
+            Hola, I'am Peter, <br />
+            <span id="full-stack">
+              <Typewriter
+                onInit={(typewriter) => {
+                  typewriter.typeString("A Full Stack Developer").start();
+                }}
+                options={{
+                  cursor: "",
+                }}
+              />
+            </span>
+          </h1>
+          <p className="font-semibold pt-8 pb-6 text-white text-justify">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis
+            mollitia veniam, quod, ab qui in quisquam, et impedit unde
+            accusantium pariatur at. Magni temporibus voluptatum perspiciatis
+            earum dolorum ipsam harum!
           </p>
           <div>
-            <button>
-              Portfolio
-              <span>
-                <HiArrowNarrowRight />
+            <button className="w-fit px-6 py-3 my-2 flex items-center rounded-md cursor-pointer group bg-gradient-to-r from-[#fba2a2] to-[#f87171] text-xl text-white font-extrabold">
+              Projects
+              <span className="group-hover:rotate-90 duration-300">
+                <HiArrowNarrowRight size={18} className="ml-2" />
               </span>
             </button>
           </div>
         </div>
-        <div className="max-w-screen-lg px-6 md:w-2/4">
-          <img src={mtm} alt="evolution monkey to man picture" />
+        <div className="max-w-screen-lg w-fit md:w-1/4 md:items-center">
+          <img src={mtm} alt="evolution monkey to man" />
         </div>
       </div>
     </div>
