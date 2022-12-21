@@ -13,11 +13,12 @@ import sass from "../assets/sass.svg";
 import tailwind from "../assets/tailwind.svg";
 import typescript from "../assets/typescript.svg";
 import python from "../assets/python.svg";
+import Wave from "react-wavify";
 
 function About() {
   return (
-    <div name="about" className="w-full h-screen px-4 text-white bg-[#001122]">
-      <div className="mx-auto px-6 pt-36 flex flex-col justify-center w-full max-w-screen-2xl">
+    <div name="about" className="w-full min-h-screen text-white bg-[#001122]">
+      <div className="mx-auto px-10 pt-36 flex flex-col justify-center w-full max-w-screen-2xl">
         <div className="font-bold text-5xl pb-6 text-[#f87171]">
           <p>About</p>
         </div>
@@ -41,10 +42,9 @@ function About() {
           unde fuga nostrum labore.
         </p>
       </div>
-      <div>
-        <div className="w-10 m-auto flex">
+      <div className="flex flex-col sticky top-[100%]">
+        <div className="w-10 mx-auto flex p-1">
           <img src={javascript} alt="programming languages" />
-          <img src={css} alt="programming languages" />
           <img src={sass} alt="programming languages" />
           <img src={react} alt="programming languages" />
           <img src={typescript} alt="programming languages" />
@@ -52,7 +52,7 @@ function About() {
           <img src={python} alt="programming languages" />
           <img src={redux} alt="programming languages" />
         </div>
-        <div className="w-10 m-auto flex">
+        <div className="w-10 flex mx-auto">
           <img src={django} alt="programming languages" />
           <img src={css} alt="programming languages" />
           <img src={mongodb} alt="programming languages" />
@@ -62,6 +62,17 @@ function About() {
           <img src={next} alt="programming languages" />
           <img src={graphql} alt="programming languages" />
         </div>
+        <Wave
+          fill="#fac662"
+          paused={false}
+          options={{
+            height: 0,
+            amplitude: 80,
+            speed: 0.2,
+            points: 3,
+          }}
+          className="h-[24rem]"
+        />
       </div>
     </div>
   );
