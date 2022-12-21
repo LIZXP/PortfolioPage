@@ -16,8 +16,8 @@ import python from "../assets/python.svg";
 
 function About() {
   return (
-    <div className="h-full bg-[#001122]">
-      <div name="about" className="w-full h-screen">
+    <div name="about" className="w-full h-screen text-white bg-[#001122]">
+      <div>
         <p>About</p>
       </div>
       <p>
