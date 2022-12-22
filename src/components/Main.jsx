@@ -20,8 +20,8 @@ function Main() {
       name="home"
     >
       <div className="mx-auto px-4 flex flex-col items-center justify-center pt-36 md:flex-row md:h-full">
-        <div className="flex flex-col justify-center px-6 h-1/4 max-w-screen-lg md:w-2/5">
-          <h1 className="text-5xl md:text-6xl font-bold" id="title">
+        <div className="flex flex-col justify-center px-6 max-sm:pb-[6rem] h-1/4 max-w-screen-xl lg:w-[40%]">
+          <h1 className="text-2xl lg:text-6xl font-bold" id="title">
             Hola, I'am Peter, <br />
             <span id="full-stack">
               <Typewriter
@@ -34,7 +34,7 @@ function Main() {
               />
             </span>
           </h1>
-          <p className="font-semibold pt-8 pb-6 text-white text-justify">
+          <p className="font-semibold pt-8 text-sm lg:text-base pb-6 text-white text-justify">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis
             mollitia veniam, quod, ab qui in quisquam, et impedit unde
             accusantium pariatur at. Magni temporibus voluptatum perspiciatis
@@ -49,7 +49,7 @@ function Main() {
             </button>
           </div>
         </div>
-        <div className="max-w-screen-lg w-fit md:w-1/4 md:items-center">
+        <div className="max-w-screen-lg w-fit lg:w-1/4 md:items-center">
           <img src={mtm} alt="evolution monkey to man" />
         </div>
       </div>
