@@ -17,12 +17,15 @@ import Wave from "react-wavify";
 
 function About() {
   return (
-    <div name="about" className="w-full min-h-screen text-white bg-[#001122]">
-      <div className="mx-auto px-10 pt-36 flex flex-col justify-center w-full max-w-screen-2xl">
-        <div className="font-bold text-5xl pb-6 text-[#f87171]">
+    <div
+      name="about"
+      className="w-full min-h-screen md:pt-[10rem] text-white bg-[#001122]"
+    >
+      <div className="mx-auto px-10 pt-[12rem] flex flex-col justify-center w-full max-w-screen-2xl">
+        <div className="font-bold md:text-5xl pb-6 text-[#f87171]">
           <p>About</p>
         </div>
-        <p className="font-medium text-justify text-lg">
+        <p className="font-medium text-justify text-xs md:text-lg">
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus
           cumque doloremque impedit culpa voluptatum ipsam omnis non
           consequuntur iure quis et eos facere quam dolore, excepturi nostrum in
@@ -42,36 +45,96 @@ function About() {
           unde fuga nostrum labore.
         </p>
       </div>
-      <div className="flex flex-col sticky top-[100%]">
-        <div className="w-10 mx-auto flex p-1">
-          <img src={javascript} alt="programming languages" />
-          <img src={sass} alt="programming languages" />
-          <img src={react} alt="programming languages" />
-          <img src={typescript} alt="programming languages" />
-          <img src={html} alt="programming languages" />
-          <img src={python} alt="programming languages" />
-          <img src={redux} alt="programming languages" />
+      <div className="flex flex-col relative pt-[2rem] md:pt-[8rem] overflow-y-hidden h-full">
+        <div className="flex justify-between mx-[5rem] pt-[8rem] md:pt-[10rem] pb-[6rem] md:pd-[10rem] z-10">
+          <img
+            src={javascript}
+            alt="programming languages"
+            className="w-5 md:w-10 xl:w-24"
+          />
+          <img
+            src={sass}
+            alt="programming languages"
+            className="w-5 md:w-10 xl:w-24"
+          />
+          <img
+            src={react}
+            alt="programming languages"
+            className="w-5 md:w-10 xl:w-24"
+          />
+          <img
+            src={typescript}
+            alt="programming languages"
+            className="w-5 md:w-10 xl:w-24"
+          />
+          <img
+            src={html}
+            alt="programming languages"
+            className="w-5 md:w-10 xl:w-24"
+          />
+          <img
+            src={python}
+            alt="programming languages"
+            className="w-5 md:w-10 xl:w-24"
+          />
+          <img
+            src={redux}
+            alt="programming languages"
+            className="w-5 md:w-10 xl:w-24"
+          />
         </div>
-        <div className="w-10 flex mx-auto">
-          <img src={django} alt="programming languages" />
-          <img src={css} alt="programming languages" />
-          <img src={mongodb} alt="programming languages" />
-          <img src={graphql} alt="programming languages" />
-          <img src={tailwind} alt="programming languages" />
-          <img src={firebase} alt="programming languages" />
-          <img src={next} alt="programming languages" />
-          <img src={graphql} alt="programming languages" />
+        <div className="flex justify-evenly pb-[2rem] md:pb-[6rem] z-10">
+          <img
+            src={django}
+            alt="programming languages"
+            className="w-5 md:w-10 xl:w-24"
+          />
+          <img
+            src={css}
+            alt="programming languages"
+            className="w-5 md:w-10 xl:w-24"
+          />
+          <img
+            src={mongodb}
+            alt="programming languages"
+            className="w-5 md:w-10 xl:w-24"
+          />
+          <img
+            src={graphql}
+            alt="programming languages"
+            className="w-5 md:w-10 xl:w-24"
+          />
+          <img
+            src={tailwind}
+            alt="programming languages"
+            className="w-5 md:w-10 xl:w-24"
+          />
+          <img
+            src={firebase}
+            alt="programming languages"
+            className="w-5 md:w-10 xl:w-24"
+          />
+          <img
+            src={next}
+            alt="programming languages"
+            className="w-5 md:w-10 xl:w-24"
+          />
+          <img
+            src={graphql}
+            alt="programming languages"
+            className="w-5 md:w-10 xl:w-24"
+          />
         </div>
         <Wave
           fill="#fac662"
           paused={false}
           options={{
-            height: 0,
-            amplitude: 80,
+            height: 60,
+            amplitude: 50,
             speed: 0.2,
             points: 3,
           }}
-          className="h-[24rem]"
+          className="h-[60rem] absolute z-0"
         />
       </div>
     </div>

@@ -5,7 +5,9 @@
 @tailwind utilities;
 
 @layer base {
-  html {
+  html,
+  body {
     font-family: "Raleway", sans-serif;
+    overflow-x: hidden;
   }
 }
