@@ -13,6 +13,7 @@ import sass from "../assets/sass.svg";
 import tailwind from "../assets/tailwind.svg";
 import typescript from "../assets/typescript.svg";
 import python from "../assets/python.svg";
+import apollo from "../assets/apollo.svg";
 import Wave from "react-wavify";
 
 function About() {
@@ -23,7 +24,9 @@ function About() {
     >
       <div className="mx-auto px-10 pt-[12rem] flex flex-col justify-center max-[360px]:pt-[2rem] w-full max-w-screen-2xl">
         <div className="font-bold md:text-5xl pb-6 text-[#f87171]">
-          <p>About</p>
+          <p className="text-4xl font-bold inline border-b-4 border-gray-500">
+            About
+          </p>
         </div>
         <p className="font-medium text-justify max-[360px]:text-left text-xs md:text-lg">
           As a full stack developer with a background in financial accounting
@@ -121,7 +124,7 @@ function About() {
             className="w-5 md:w-10 xl:w-[5rem] animate-floatThree"
           />
           <img
-            src={graphql}
+            src={apollo}
             alt="programming languages"
             className="w-5 md:w-10 xl:w-[5rem] animate-floatTwo"
           />
