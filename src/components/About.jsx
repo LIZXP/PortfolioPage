@@ -25,104 +25,105 @@ function About() {
         <div className="font-bold md:text-5xl pb-6 text-[#f87171]">
           <p>About</p>
         </div>
-        <p className="font-medium text-justify text-xs md:text-lg">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus
-          cumque doloremque impedit culpa voluptatum ipsam omnis non
-          consequuntur iure quis et eos facere quam dolore, excepturi nostrum in
-          laudantium ea? Aspernatur odio, doloremque labore sit expedita tempore
-          sequi eaque impedit quibusdam dicta fugiat delectus corrupti repellat
-          perspiciatis? Aut possimus ut quo? Similique consequuntur est totam
-          dolorem unde sed sequi saepe. Ut pariatur error odit, labore, eius
-          aliquid, impedit ea laudantium perspiciatis ipsam maxime fugiat
-          commodi. Numquam consequatur placeat eum deserunt itaque
-          exercitationem maxime nam ea et nulla, quisquam officia odio. Tenetur
-          eos nam nisi obcaecati, omnis delectus sapiente laudantium modi ex
-          explicabo officia iure laboriosam corporis, rem maxime, optio ipsa
-          exercitationem ea quaerat itaque nobis temporibus non! Quae, aliquid
-          voluptatum. Consequuntur atque nostrum quidem iste deleniti labore
-          quia harum exercitationem! Voluptas perspiciatis illo in eaque totam
-          ad, voluptate quis officiis dolores, amet odit sed vero voluptatem
-          unde fuga nostrum labore.
+        <p className="font-medium text-justify max-[360px]:text-left text-xs md:text-lg">
+          As a full stack developer with a background in financial accounting
+          and a passion for streamlining processes, I have the technical
+          expertise and real-world business experience necessary to succeed in a
+          challenging and dynamic developer role. My technical skills include
+          JavaScript, React, and Python, and I have used these technologies to
+          build a variety of projects, including a user-friendly investment
+          portfolio management application (StockOverWatch) using the React and
+          Chartjs frameworks, and a mini e-commerce application (Jungle-rails)
+          built with Ruby on Rails. In addition to my proficiency in these
+          languages and frameworks, I am skilled in using PostgreSQL, Git, and
+          Firebase, and I have experience with testing frameworks such as Jest,
+          Storybook, and Cypress. In my current role as an accounts payable
+          specialist, I have developed VBA scripts that increased the efficiency
+          of client disbursement processes by 50%, and I have mentored and
+          trained new employees to improve productivity. I am always eager to
+          learn and stay up to date on the latest technologies, and I am excited
+          to bring my skills and experience to a full stack developer role where
+          I can make a meaningful difference for the company.
         </p>
       </div>
-      <div className="flex flex-col relative pt-[2rem] md:pt-[8rem] overflow-y-hidden h-full max-md:sticky max-md:top-[100%]">
-        <div className="flex justify-between mx-[5rem] pt-[8rem] md:pt-[8rem]  pb-[6rem] max-[360px]:pb-[3rem] z-10">
+      <div className="flex flex-col relative lg:pt-[2rem] md:pt-[8rem] overflow-y-hidden h-full max-md:sticky max-md:top-[100%]">
+        <div className="flex justify-between mx-[5rem] pt-[8rem] md:pt-[8rem]  pb-[6rem] max-[390px]:pb-[1rem] max-[360px]:pb-[3rem] z-10">
           <img
             src={javascript}
             alt="programming languages"
-            className="w-5 md:w-10 xl:w-[5rem]"
+            className="w-5 md:w-10 xl:w-[5rem] animate-float"
           />
           <img
             src={sass}
             alt="programming languages"
-            className="w-5 md:w-10 xl:w-[5rem]"
+            className="w-5 md:w-10 xl:w-[5rem] animate-floatThree"
           />
           <img
             src={react}
             alt="programming languages"
-            className="w-5 md:w-10 xl:w-[5rem]"
+            className="w-5 md:w-10 xl:w-[5rem] animate-floatTwo"
           />
           <img
             src={typescript}
             alt="programming languages"
-            className="w-5 md:w-10 xl:w-[5rem]"
+            className="w-5 md:w-10 xl:w-[5rem] animate-float"
           />
           <img
             src={html}
             alt="programming languages"
-            className="w-5 md:w-10 xl:w-[5rem]"
+            className="w-5 md:w-10 xl:w-[5rem] animate-floatThree"
           />
           <img
             src={python}
             alt="programming languages"
-            className="w-5 md:w-10 xl:w-[5rem]"
+            className="w-5 md:w-10 xl:w-[5rem] animate-floatTwo"
           />
           <img
             src={redux}
             alt="programming languages"
-            className="w-5 md:w-10 xl:w-[5rem]"
+            className="w-5 md:w-10 xl:w-[5rem] animate-float"
           />
         </div>
         <div className="flex justify-evenly pb-[2rem] md:pb-[6rem] z-10">
           <img
             src={django}
             alt="programming languages"
-            className="w-5 md:w-10 xl:w-[5rem]"
+            className="w-5 md:w-10 xl:w-[5rem] animate-floatThree"
           />
           <img
             src={css}
             alt="programming languages"
-            className="w-5 md:w-10 xl:w-[5rem]"
+            className="w-5 md:w-10 xl:w-[5rem] animate-floatTwo"
           />
           <img
             src={mongodb}
             alt="programming languages"
-            className="w-5 md:w-10 xl:w-[5rem]"
+            className="w-5 md:w-10 xl:w-[5rem] animate-floatThree"
           />
           <img
             src={graphql}
             alt="programming languages"
-            className="w-5 md:w-10 xl:w-[5rem]"
+            className="w-5 md:w-10 xl:w-[5rem] animate-float"
           />
           <img
             src={tailwind}
             alt="programming languages"
-            className="w-5 md:w-10 xl:w-[5rem]"
+            className="w-5 md:w-10 xl:w-[5rem] animate-floatTwo"
           />
           <img
             src={firebase}
             alt="programming languages"
-            className="w-5 md:w-10 xl:w-[5rem]"
+            className="w-5 md:w-10 xl:w-[5rem] animate-float"
           />
           <img
             src={next}
             alt="programming languages"
-            className="w-5 md:w-10 xl:w-[5rem]"
+            className="w-5 md:w-10 xl:w-[5rem] animate-floatThree"
           />
           <img
             src={graphql}
             alt="programming languages"
-            className="w-5 md:w-10 xl:w-[5rem]"
+            className="w-5 md:w-10 xl:w-[5rem] animate-floatTwo"
           />
         </div>
         <Wave
