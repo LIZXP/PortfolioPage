@@ -19,9 +19,9 @@ function About() {
   return (
     <div
       name="about"
-      className="w-full min-h-screen md:pt-[10rem] text-white bg-[#001122]"
+      className="w-full min-h-screen md:pt-[13rem] text-white bg-[#001122]"
     >
-      <div className="mx-auto px-10 pt-[12rem] flex flex-col justify-center w-full max-w-screen-2xl">
+      <div className="mx-auto px-10 pt-[12rem] flex flex-col justify-center max-[360px]:pt-[2rem] w-full max-w-screen-2xl">
         <div className="font-bold md:text-5xl pb-6 text-[#f87171]">
           <p>About</p>
         </div>
@@ -45,84 +45,84 @@ function About() {
           unde fuga nostrum labore.
         </p>
       </div>
-      <div className="flex flex-col relative pt-[2rem] md:pt-[8rem] overflow-y-hidden h-full">
-        <div className="flex justify-between mx-[5rem] pt-[8rem] md:pt-[10rem] pb-[6rem] md:pd-[10rem] z-10">
+      <div className="flex flex-col relative pt-[2rem] md:pt-[8rem] overflow-y-hidden h-full max-md:sticky max-md:top-[100%]">
+        <div className="flex justify-between mx-[5rem] pt-[8rem] md:pt-[8rem]  pb-[6rem] max-[360px]:pb-[3rem] z-10">
           <img
             src={javascript}
             alt="programming languages"
-            className="w-5 md:w-10 xl:w-24"
+            className="w-5 md:w-10 xl:w-[5rem]"
           />
           <img
             src={sass}
             alt="programming languages"
-            className="w-5 md:w-10 xl:w-24"
+            className="w-5 md:w-10 xl:w-[5rem]"
           />
           <img
             src={react}
             alt="programming languages"
-            className="w-5 md:w-10 xl:w-24"
+            className="w-5 md:w-10 xl:w-[5rem]"
           />
           <img
             src={typescript}
             alt="programming languages"
-            className="w-5 md:w-10 xl:w-24"
+            className="w-5 md:w-10 xl:w-[5rem]"
           />
           <img
             src={html}
             alt="programming languages"
-            className="w-5 md:w-10 xl:w-24"
+            className="w-5 md:w-10 xl:w-[5rem]"
           />
           <img
             src={python}
             alt="programming languages"
-            className="w-5 md:w-10 xl:w-24"
+            className="w-5 md:w-10 xl:w-[5rem]"
           />
           <img
             src={redux}
             alt="programming languages"
-            className="w-5 md:w-10 xl:w-24"
+            className="w-5 md:w-10 xl:w-[5rem]"
           />
         </div>
         <div className="flex justify-evenly pb-[2rem] md:pb-[6rem] z-10">
           <img
             src={django}
             alt="programming languages"
-            className="w-5 md:w-10 xl:w-24"
+            className="w-5 md:w-10 xl:w-[5rem]"
           />
           <img
             src={css}
             alt="programming languages"
-            className="w-5 md:w-10 xl:w-24"
+            className="w-5 md:w-10 xl:w-[5rem]"
           />
           <img
             src={mongodb}
             alt="programming languages"
-            className="w-5 md:w-10 xl:w-24"
+            className="w-5 md:w-10 xl:w-[5rem]"
           />
           <img
             src={graphql}
             alt="programming languages"
-            className="w-5 md:w-10 xl:w-24"
+            className="w-5 md:w-10 xl:w-[5rem]"
           />
           <img
             src={tailwind}
             alt="programming languages"
-            className="w-5 md:w-10 xl:w-24"
+            className="w-5 md:w-10 xl:w-[5rem]"
           />
           <img
             src={firebase}
             alt="programming languages"
-            className="w-5 md:w-10 xl:w-24"
+            className="w-5 md:w-10 xl:w-[5rem]"
           />
           <img
             src={next}
             alt="programming languages"
-            className="w-5 md:w-10 xl:w-24"
+            className="w-5 md:w-10 xl:w-[5rem]"
           />
           <img
             src={graphql}
             alt="programming languages"
-            className="w-5 md:w-10 xl:w-24"
+            className="w-5 md:w-10 xl:w-[5rem]"
           />
         </div>
         <Wave
