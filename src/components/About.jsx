@@ -51,79 +51,79 @@ function About() {
           <img
             src={javascript}
             alt="programming languages"
-            className="w-5 md:w-10 xl:w-[5rem]"
+            className="w-5 md:w-10 xl:w-[5rem] animate-float"
           />
           <img
             src={sass}
             alt="programming languages"
-            className="w-5 md:w-10 xl:w-[5rem]"
+            className="w-5 md:w-10 xl:w-[5rem] animate-floatThree"
           />
           <img
             src={react}
             alt="programming languages"
-            className="w-5 md:w-10 xl:w-[5rem]"
+            className="w-5 md:w-10 xl:w-[5rem] animate-floatTwo"
           />
           <img
             src={typescript}
             alt="programming languages"
-            className="w-5 md:w-10 xl:w-[5rem]"
+            className="w-5 md:w-10 xl:w-[5rem] animate-float"
           />
           <img
             src={html}
             alt="programming languages"
-            className="w-5 md:w-10 xl:w-[5rem]"
+            className="w-5 md:w-10 xl:w-[5rem] animate-floatThree"
           />
           <img
             src={python}
             alt="programming languages"
-            className="w-5 md:w-10 xl:w-[5rem]"
+            className="w-5 md:w-10 xl:w-[5rem] animate-floatTwo"
           />
           <img
             src={redux}
             alt="programming languages"
-            className="w-5 md:w-10 xl:w-[5rem]"
+            className="w-5 md:w-10 xl:w-[5rem] animate-float"
           />
         </div>
         <div className="flex justify-evenly pb-[2rem] md:pb-[6rem] z-10">
           <img
             src={django}
             alt="programming languages"
-            className="w-5 md:w-10 xl:w-[5rem]"
+            className="w-5 md:w-10 xl:w-[5rem] animate-floatThree"
           />
           <img
             src={css}
             alt="programming languages"
-            className="w-5 md:w-10 xl:w-[5rem]"
+            className="w-5 md:w-10 xl:w-[5rem] animate-floatTwo"
           />
           <img
             src={mongodb}
             alt="programming languages"
-            className="w-5 md:w-10 xl:w-[5rem]"
+            className="w-5 md:w-10 xl:w-[5rem] animate-floatThree"
           />
           <img
             src={graphql}
             alt="programming languages"
-            className="w-5 md:w-10 xl:w-[5rem]"
+            className="w-5 md:w-10 xl:w-[5rem] animate-float"
           />
           <img
             src={tailwind}
             alt="programming languages"
-            className="w-5 md:w-10 xl:w-[5rem]"
+            className="w-5 md:w-10 xl:w-[5rem] animate-floatTwo"
           />
           <img
             src={firebase}
             alt="programming languages"
-            className="w-5 md:w-10 xl:w-[5rem]"
+            className="w-5 md:w-10 xl:w-[5rem] animate-float"
           />
           <img
             src={next}
             alt="programming languages"
-            className="w-5 md:w-10 xl:w-[5rem]"
+            className="w-5 md:w-10 xl:w-[5rem] animate-floatThree"
           />
           <img
             src={graphql}
             alt="programming languages"
-            className="w-5 md:w-10 xl:w-[5rem]"
+            className="w-5 md:w-10 xl:w-[5rem] animate-floatTwo"
           />
         </div>
         <Wave
