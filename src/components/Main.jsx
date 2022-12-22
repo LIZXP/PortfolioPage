@@ -35,10 +35,13 @@ function Main() {
             </span>
           </h1>
           <p className="font-semibold pt-8 text-sm lg:text-base pb-6 text-white text-justify">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis
-            mollitia veniam, quod, ab qui in quisquam, et impedit unde
-            accusantium pariatur at. Magni temporibus voluptatum perspiciatis
-            earum dolorum ipsam harum!
+            Motivated and detail-oriented Full stack developer with expertise in
+            JavaScript, React, and Python, seeking a challenging and dynamic
+            role where I can use my technical skills and real-world business
+            experience to create innovative solutions and drive positive impact.
+            Proven ability to streamline processes and prioritize business
+            functions, and a passion for continuously learning and staying up to
+            date on the latest technologies.
           </p>
           <div>
             <button className="w-fit px-6 py-3 my-2 flex items-center rounded-md cursor-pointer group bg-gradient-to-r from-[#fba2a2] to-[#f87171] text-xl text-white font-extrabold">
