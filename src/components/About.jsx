@@ -25,7 +25,7 @@ function About() {
         <div className="font-bold md:text-5xl pb-6 text-[#f87171]">
           <p>About</p>
         </div>
-        <p className="font-medium text-justify text-xs md:text-lg">
+        <p className="font-medium text-justify max-[360px]:text-left text-xs md:text-lg">
           As a full stack developer with a background in financial accounting
           and a passion for streamlining processes, I have the technical
           expertise and real-world business experience necessary to succeed in a
@@ -46,8 +46,8 @@ function About() {
           I can make a meaningful difference for the company.
         </p>
       </div>
-      <div className="flex flex-col relative pt-[2rem] md:pt-[8rem] overflow-y-hidden h-full max-md:sticky max-md:top-[100%]">
-        <div className="flex justify-between mx-[5rem] pt-[8rem] md:pt-[8rem]  pb-[6rem] max-[360px]:pb-[3rem] z-10">
+      <div className="flex flex-col relative lg:pt-[2rem] md:pt-[8rem] overflow-y-hidden h-full max-md:sticky max-md:top-[100%]">
+        <div className="flex justify-between mx-[5rem] pt-[8rem] md:pt-[8rem]  pb-[6rem] max-[390px]:pb-[1rem] max-[360px]:pb-[3rem] z-10">
           <img
             src={javascript}
             alt="programming languages"
