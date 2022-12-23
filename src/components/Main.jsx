@@ -52,7 +52,7 @@ function Main() {
             </button>
           </div>
         </div>
-        <div className="max-w-screen-lg w-fit lg:w-1/4 md:items-center">
+        <div className="max-w-screen-lg w-fit lg:w-1/4 md:items-center flex-shrink-[0.5]">
           <img src={mtm} alt="evolution monkey to man" />
         </div>
       </div>

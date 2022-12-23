@@ -22,7 +22,7 @@ function About() {
       name="about"
       className="w-full min-h-screen md:pt-[13rem] text-white bg-[#001122]"
     >
-      <div className="mx-auto px-10 pt-[12rem] flex flex-col justify-center max-[360px]:pt-[2rem] w-full max-w-screen-2xl">
+      <div className="mx-auto px-10 pt-[4rem] pb-[8rem] flex flex-col justify-center max-[360px]:pt-[2rem] w-full max-w-screen-lg ">
         <div className="font-bold md:text-5xl pb-6 text-[#f87171]">
           <p className="text-4xl font-bold inline border-b-4 border-gray-500">
             About
