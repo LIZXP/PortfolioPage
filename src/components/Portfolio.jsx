@@ -16,21 +16,18 @@ function Portfolio() {
           </p>
           <p className="py-6">Check out my recent projects</p>
         </div>
-        <div className="grid sm:grid-cols-2 gap-8 px-12 sm:px-0">
+        <div className="grid sm:grid-cols-2 max-[420px]:gap-y-[1rem] md:gap-y-[2rem] md:px-12 sm:px-0">
           {ports.map(({ src }, i) => (
-            <div key={i} className="shadow-md shadow-gray-600 rounded-lg">
-              <video
-                src={src}
-                loop
-                autoPlay
-                muted
-                className="rounded-md duration-200 hover:scale-105"
-              />
+            <div
+              key={i}
+              className="shadow-md md:w-[42rem] shadow-gray-600 rounded-lg duration-200 hover:scale-105"
+            >
+              <video src={src} loop autoPlay muted className="rounded-md" />
               <div className="flex items-center justify-center">
-                <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
+                <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-125">
                   Demo
                 </button>
-                <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
+                <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-125">
                   Code
                 </button>
               </div>
