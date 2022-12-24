@@ -9,7 +9,7 @@ function NavBar() {
   ];
   const [nav, setNav] = useState(false);
   return (
-    <div className="flex justify-between items-center w-full h-20 pb-5 text-red-400 px-4 fixed bg-gradient-to-r from-[#5d951f] via-[#001122] to-[#001122]">
+    <div className="flex justify-between items-center w-full h-20 pb-5 text-red-400 px-4 fixed bg-gradient-to-r from-[#5d951f] via-[#001122] to-[#001122] z-50">
       <div>
         <svg
           xmlns="http://www.w3.org/2000/svg"
