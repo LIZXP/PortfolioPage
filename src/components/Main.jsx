@@ -4,6 +4,7 @@ import { HiArrowNarrowRight } from "react-icons/hi";
 import mtm from "../assets/eve.svg";
 import "./title.scss";
 import Typewriter from "typewriter-effect";
+import { Link } from "react-scroll";
 
 function Main() {
   return (
@@ -44,12 +45,17 @@ function Main() {
             date on the latest technologies.
           </p>
           <div>
-            <button className="w-fit px-6 py-3 my-2 flex items-center rounded-md cursor-pointer group bg-gradient-to-r from-[#fba2a2] to-[#f87171] text-xl text-white font-extrabold">
+            <Link
+              to="project"
+              smooth
+              duration={600}
+              className="w-fit px-6 py-3 my-2 flex items-center rounded-md cursor-pointer group bg-gradient-to-r from-[#fba2a2] to-[#f87171] text-xl text-white font-extrabold"
+            >
               Projects
               <span className="group-hover:rotate-90 duration-300">
                 <HiArrowNarrowRight size={18} className="ml-2" />
               </span>
-            </button>
+            </Link>
           </div>
         </div>
         <div className="max-w-screen-lg w-fit lg:w-1/4 md:items-center flex-shrink-[0.5]">

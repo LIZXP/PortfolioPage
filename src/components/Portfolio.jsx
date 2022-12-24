@@ -6,7 +6,7 @@ function Portfolio() {
   const ports = [{ src: stock }, { src: jun }, { src: sche }];
   return (
     <div
-      name="portfolio"
+      name="project"
       className="w-full text-[#f87171] pt-[2rem] md:pt-[8rem] lg:pt-[3rem] max-lg:mx-16 max-sm:mx-0 overflow-hidden"
     >
       <div className="max-w-screen-2xl p-4 mx-auto flex flex-col justify-center w-full h-full">
