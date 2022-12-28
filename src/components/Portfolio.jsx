@@ -22,7 +22,7 @@ function Portfolio() {
           {ports.map(({ src }, i) => (
             <div
               key={i}
-              className="shadow-md md:w-[42rem] shadow-gray-600 rounded-lg duration-200 hover:scale-105"
+              className="shadow-md sm:w-[17rem] md:w-[18rem] lg:w-[24rem] xl:w-[36rem] shadow-gray-600 rounded-lg duration-200 hover:scale-105"
             >
               <video src={src} loop autoPlay muted className="rounded-md" />
               <div className="flex items-center justify-center">
