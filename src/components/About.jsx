@@ -22,7 +22,7 @@ function About() {
       name="about"
       className="w-full min-h-screen md:pt-[2rem] text-white bg-[#001122]"
     >
-      <div className="mx-auto px-10 pt-[4rem] pb-[8rem] flex flex-col justify-center max-[360px]:pt-[2rem] w-full max-w-screen-lg ">
+      <div className="mx-auto px-10 pt-[4rem] pb-[2rem] flex flex-col justify-center max-[360px]:pt-[2rem] w-full max-w-screen-lg ">
         <div className="font-bold md:text-5xl pb-6 text-[#f87171]">
           <p className="text-4xl font-bold inline border-b-4 border-gray-500">
             About
@@ -54,79 +54,79 @@ function About() {
           <img
             src={javascript}
             alt="programming languages"
-            className="w-5 md:w-10 xl:w-[5rem] animate-float"
+            className="w-5 md:w-10 xl:w-[3rem] animate-float"
           />
           <img
             src={sass}
             alt="programming languages"
-            className="w-5 md:w-10 xl:w-[5rem] animate-floatThree"
+            className="w-5 md:w-10 xl:w-[3rem] animate-floatThree"
           />
           <img
             src={react}
             alt="programming languages"
-            className="w-5 md:w-10 xl:w-[5rem] animate-floatTwo"
+            className="w-5 md:w-10 xl:w-[3rem] animate-floatTwo"
           />
           <img
             src={typescript}
             alt="programming languages"
-            className="w-5 md:w-10 xl:w-[5rem] animate-float"
+            className="w-5 md:w-10 xl:w-[3rem] animate-float"
           />
           <img
             src={html}
             alt="programming languages"
-            className="w-5 md:w-10 xl:w-[5rem] animate-floatThree"
+            className="w-5 md:w-10 xl:w-[3rem] animate-floatThree"
           />
           <img
             src={python}
             alt="programming languages"
-            className="w-5 md:w-10 xl:w-[5rem] animate-floatTwo"
+            className="w-5 md:w-10 xl:w-[3rem] animate-floatTwo"
           />
           <img
             src={redux}
             alt="programming languages"
-            className="w-5 md:w-10 xl:w-[5rem] animate-float"
+            className="w-5 md:w-10 xl:w-[3rem] animate-float"
           />
         </div>
         <div className="flex justify-evenly pb-[2rem] md:pb-[6rem] z-10">
           <img
             src={django}
             alt="programming languages"
-            className="w-5 md:w-10 xl:w-[5rem] animate-floatThree"
+            className="w-5 md:w-10 xl:w-[3rem] animate-floatThree"
           />
           <img
             src={css}
             alt="programming languages"
-            className="w-5 md:w-10 xl:w-[5rem] animate-floatTwo"
+            className="w-5 md:w-10 xl:w-[3rem] animate-floatTwo"
           />
           <img
             src={mongodb}
             alt="programming languages"
-            className="w-5 md:w-10 xl:w-[5rem] animate-floatThree"
+            className="w-5 md:w-10 xl:w-[3rem] animate-floatThree"
           />
           <img
             src={graphql}
             alt="programming languages"
-            className="w-5 md:w-10 xl:w-[5rem] animate-float"
+            className="w-5 md:w-10 xl:w-[3rem] animate-float"
           />
           <img
             src={tailwind}
             alt="programming languages"
-            className="w-5 md:w-10 xl:w-[5rem] animate-floatTwo"
+            className="w-5 md:w-10 xl:w-[3rem] animate-floatTwo"
           />
           <img
             src={firebase}
             alt="programming languages"
-            className="w-5 md:w-10 xl:w-[5rem] animate-float"
+            className="w-5 md:w-10 xl:w-[3rem] animate-float"
           />
           <img
             src={next}
             alt="programming languages"
-            className="w-5 md:w-10 xl:w-[5rem] animate-floatThree"
+            className="w-5 md:w-10 xl:w-[3rem] animate-floatThree"
           />
           <img
             src={apollo}
             alt="programming languages"
-            className="w-5 md:w-10 xl:w-[5rem] animate-floatTwo"
+            className="w-5 md:w-10 xl:w-[3rem] animate-floatTwo"
           />
         </div>
         <Wave
@@ -138,7 +138,7 @@ function About() {
             speed: 0.2,
             points: 3,
           }}
-          className="h-[50rem] absolute z-0"
+          className="h-[60rem] absolute z-0"
         />
       </div>
     </div>

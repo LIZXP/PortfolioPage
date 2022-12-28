@@ -2,12 +2,14 @@ import React from "react";
 import stock from "../assets/Stock.mp4";
 import jun from "../assets/Jun.mp4";
 import sche from "../assets/Sche.mp4";
+import background from "../assets/bg.svg";
+
 function Portfolio() {
   const ports = [{ src: stock }, { src: jun }, { src: sche }];
   return (
     <div
       name="project"
-      className="w-full text-[#f87171] pt-[2rem] md:pt-[8rem] lg:pt-[5rem] max-lg:mx-16 max-sm:mx-0 overflow-hidden"
+      className="w-screen text-[#f87171] pt-[2rem] md:pt-[8rem] lg:pt-[5rem] max-sm:mx-0 bg-[#012]"
     >
       <div className="max-w-screen-2xl p-4 mx-auto flex flex-col justify-center w-full h-full">
         <div className="pb-8">
