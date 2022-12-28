@@ -7,7 +7,7 @@ function Portfolio() {
   return (
     <div
       name="project"
-      className="w-full text-[#f87171] pt-[2rem] md:pt-[8rem] lg:pt-[3rem] max-lg:mx-16 max-sm:mx-0 overflow-hidden"
+      className="w-full text-[#f87171] pt-[2rem] md:pt-[8rem] lg:pt-[5rem] max-lg:mx-16 max-sm:mx-0 overflow-hidden"
     >
       <div className="max-w-screen-2xl p-4 mx-auto flex flex-col justify-center w-full h-full">
         <div className="pb-8">
