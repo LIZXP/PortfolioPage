@@ -2,7 +2,6 @@ import React from "react";
 import stock from "../assets/Stock.mp4";
 import jun from "../assets/Jun.mp4";
 import sche from "../assets/Sche.mp4";
-import background from "../assets/bg.svg";
 
 function Portfolio() {
   const ports = [{ src: stock }, { src: jun }, { src: sche }];
