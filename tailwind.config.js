@@ -8,9 +8,9 @@ module.exports = {
       },
       keyframes: {
         float: {
-          "0%": { transform: "translateY(-20px) rotate(20deg)" },
-          "33%": { transform: "translateY(20px) rotate(0deg)" },
-          "100%": { transform: "translateY(-20px) rotate(20deg)" },
+          "0%": { transform: "translateY(-12px) rotate(20deg)" },
+          "33%": { transform: "translateY(18px) rotate(0deg)" },
+          "100%": { transform: "translateY(-12px) rotate(20deg)" },
         },
       },
     },
