@@ -20,7 +20,7 @@ function About() {
   return (
     <div
       name="about"
-      className="w-full min-h-screen md:pt-[2rem] text-white bg-[#001122] max-[391px]:pt-[2rem] max-[413px]:pt-[2rem]"
+      className="w-full min-h-screen md:pt-[2rem] text-white bg-[#001122] max-[415px]:pt-[2.4rem] max-[391px]:pt-[2rem] max-[413px]:pt-[2rem]"
     >
       <div className="mx-auto px-10 pt-[4rem] max-[413px]:pb-[0rem] pb-[2rem] flex flex-col justify-center max-[360px]:pt-[2rem] w-full max-w-screen-lg ">
         <div className="font-bold md:text-5xl pb-6 text-[#f87171]">
