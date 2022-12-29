@@ -59,12 +59,12 @@ function About() {
           <img
             src={sass}
             alt="programming languages"
-            className="w-5 md:w-10 xl:w-[3rem] animate-floatThree"
+            className="w-5 md:w-10 xl:w-[3rem] animate-float animation-delay-2000"
           />
           <img
             src={react}
             alt="programming languages"
-            className="w-5 md:w-10 xl:w-[3rem] animate-floatTwo"
+            className="w-5 md:w-10 xl:w-[3rem] animate-float animation-delay-3000"
           />
           <img
             src={typescript}
@@ -74,44 +74,44 @@ function About() {
           <img
             src={html}
             alt="programming languages"
-            className="w-5 md:w-10 xl:w-[3rem] animate-floatThree"
+            className="w-5 md:w-10 xl:w-[3rem] animate-float animation-delay-2000"
           />
           <img
             src={python}
             alt="programming languages"
-            className="w-5 md:w-10 xl:w-[3rem] animate-floatTwo"
+            className="w-5 md:w-10 xl:w-[3rem] animate-float"
           />
           <img
             src={redux}
             alt="programming languages"
-            className="w-5 md:w-10 xl:w-[3rem] animate-float"
+            className="w-5 md:w-10 xl:w-[3rem] animate-float animation-delay-2000"
           />
         </div>
         <div className="flex justify-evenly pb-[2rem] md:pb-[6rem] z-10">
           <img
             src={django}
             alt="programming languages"
-            className="w-5 md:w-10 xl:w-[3rem] animate-floatThree"
+            className="w-5 md:w-10 xl:w-[3rem] animate-float animation-delay-2000"
           />
           <img
             src={css}
             alt="programming languages"
-            className="w-5 md:w-10 xl:w-[3rem] animate-floatTwo"
+            className="w-5 md:w-10 xl:w-[3rem] animate-float animation-delay-3000"
           />
           <img
             src={mongodb}
             alt="programming languages"
-            className="w-5 md:w-10 xl:w-[3rem] animate-floatThree"
+            className="w-5 md:w-10 xl:w-[3rem] animate-float"
           />
           <img
             src={graphql}
             alt="programming languages"
-            className="w-5 md:w-10 xl:w-[3rem] animate-float"
+            className="w-5 md:w-10 xl:w-[3rem] animate-float animation-delay-3000"
           />
           <img
             src={tailwind}
             alt="programming languages"
-            className="w-5 md:w-10 xl:w-[3rem] animate-floatTwo"
+            className="w-5 md:w-10 xl:w-[3rem] animate-float animation-delay-2000"
           />
           <img
             src={firebase}
@@ -121,12 +121,12 @@ function About() {
           <img
             src={next}
             alt="programming languages"
-            className="w-5 md:w-10 xl:w-[3rem] animate-floatThree"
+            className="w-5 md:w-10 xl:w-[3rem] animate-float animation-delay-2000"
           />
           <img
             src={apollo}
             alt="programming languages"
-            className="w-5 md:w-10 xl:w-[3rem] animate-floatTwo"
+            className="w-5 md:w-10 xl:w-[3rem] animate-float"
           />
         </div>
         <Wave
