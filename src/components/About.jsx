@@ -22,6 +22,13 @@ function About() {
       name="about"
       className="w-full min-h-screen md:pt-[2rem] text-white bg-[#001122] max-[415px]:pt-[2.4rem] max-[391px]:pt-[2rem] max-[413px]:pt-[2rem] "
     >
+      <div className="relative w-full h-screen z-50 overflow-hidden">
+        <div className="relative flex [&>*:nth-child(odd)]:shadow-[0_0_0_10px_#4fc3dc44,0_0_50px_#4fc3dc44,0_0_100px_#4fc3dc44] [&>*:nth-child(odd)]:bg-[#4fc3dc] [&>*:nth-child(even)]:shadow-[0_0_0_10px_#ff2d7544,0_0_50px_#ff2d75,0_0_100px_#ff2d75] [&>*:nth-child(even)]:bg-[#ff2d75] [&>span]:animate-bubble">
+          <span className="relative w-[30px] h-[30px] mt-0 mr-[4px] rounded-full"></span>
+          <span className="relative w-[30px] h-[30px] mt-0 mr-[4px] rounded-full"></span>
+          <span className="relative w-[30px] h-[30px] mt-0 mr-[4px] rounded-full"></span>
+        </div>
+      </div>
       <div className="mx-auto max-[1022px]:px-8 pt-[4rem] max-[413px]:pb-[0rem] pb-[2rem] flex flex-col justify-center max-[360px]:pt-[2rem] w-full max-w-screen-2xl max-[1600px]:pl-[3rem]">
         <div className="font-bold md:text-5xl pb-6 text-[#f87171] p-6">
           <p className="text-4xl font-bold inline border-b-4 border-gray-500">
