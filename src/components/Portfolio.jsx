@@ -8,9 +8,9 @@ function Portfolio() {
   return (
     <div
       name="project"
-      className="w-screen text-[#f87171] pt-[4rem] md:pt-[8rem] lg:pt-[5rem] max-sm:mx-0 bg-[#012]"
+      className="w-screen text-[#f87171] pt-[4rem] md:pt-[8rem] lg:pt-[5rem] max-sm:mx-0 bg-[#012] max-[1022px]:pl-[0rem] max-[1600px]:pl-[3rem]"
     >
-      <div className="max-w-screen-2xl p-4 mx-auto flex flex-col justify-center w-full h-full">
+      <div className="max-w-screen-2xl p-6 mx-auto flex flex-col justify-center w-full h-full">
         <div className="pb-1">
           <p className="text-4xl font-bold inline border-b-4 border-gray-500">
             Portfolio

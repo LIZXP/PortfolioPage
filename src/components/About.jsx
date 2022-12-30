@@ -20,15 +20,15 @@ function About() {
   return (
     <div
       name="about"
-      className="w-full min-h-screen md:pt-[2rem] text-white bg-[#001122] max-[391px]:pt-[2rem] max-[413px]:pt-[2rem]"
+      className="w-full min-h-screen md:pt-[2rem] text-white bg-[#001122] max-[415px]:pt-[2.4rem] max-[391px]:pt-[2rem] max-[413px]:pt-[2rem] "
     >
-      <div className="mx-auto px-10 pt-[4rem] max-[413px]:pb-[0rem] pb-[2rem] flex flex-col justify-center max-[360px]:pt-[2rem] w-full max-w-screen-lg ">
-        <div className="font-bold md:text-5xl pb-6 text-[#f87171]">
+      <div className="mx-auto max-[1022px]:px-8 pt-[4rem] max-[413px]:pb-[0rem] pb-[2rem] flex flex-col justify-center max-[360px]:pt-[2rem] w-full max-w-screen-2xl max-[1600px]:pl-[3rem]">
+        <div className="font-bold md:text-5xl pb-6 text-[#f87171] p-6">
           <p className="text-4xl font-bold inline border-b-4 border-gray-500">
             About
           </p>
         </div>
-        <p className="font-medium text-justify max-[360px]:text-left text-xs md:text-lg">
+        <p className="font-medium text-justify max-[360px]:text-left text-xs md:text-lg max-w-screen-lg p-6">
           As a full stack developer with a background in financial accounting
           and a passion for streamlining processes, I have the technical
           expertise and real-world business experience necessary to succeed in a
