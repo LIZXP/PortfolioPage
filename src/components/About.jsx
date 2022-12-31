@@ -24,6 +24,33 @@ function About() {
     >
       <div className="relative w-full h-screen z-50 overflow-hidden">
         <div className="relative flex [&>*:nth-child(odd)]:shadow-[0_0_0_10px_#4fc3dc44,0_0_50px_#4fc3dc44,0_0_100px_#4fc3dc44] [&>*:nth-child(odd)]:bg-[#4fc3dc] [&>*:nth-child(even)]:shadow-[0_0_0_10px_#ff2d7544,0_0_50px_#ff2d75,0_0_100px_#ff2d75] [&>*:nth-child(even)]:bg-[#ff2d75] [&>span]:animate-bubble [&>*]:animate-bubble">
+          <span className="spanStyle" style={{ "--i": 14 }}></span>
+          <span className="spanStyle"></span>
+          <span className="spanStyle"></span>
+          <span className="spanStyle"></span>
+          <span className="spanStyle"></span>
+          <span className="spanStyle"></span>
+          <span className="spanStyle"></span>
+          <span className="spanStyle"></span>
+          <span className="spanStyle"></span>
+          <span className="spanStyle"></span>
+          <span className="spanStyle"></span>
+          <span className="spanStyle"></span>
+          <span className="spanStyle"></span>
+          <span className="spanStyle"></span>
+          <span className="spanStyle"></span>
+          <span className="spanStyle"></span>
+          <span className="spanStyle"></span>
+          <span className="spanStyle"></span>
+          <span className="spanStyle"></span>
+          <span className="spanStyle"></span>
+          <span className="spanStyle"></span>
+          <span className="spanStyle"></span>
+          <span className="spanStyle"></span>
+          <span className="spanStyle"></span>
+          <span className="spanStyle"></span>
+          <span className="spanStyle"></span>
+          <span className="spanStyle"></span>
           <span className="spanStyle"></span>
           <span className="spanStyle"></span>
           <span className="spanStyle"></span>

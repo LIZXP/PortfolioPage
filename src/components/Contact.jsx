@@ -1,6 +1,28 @@
-import React from "react";
+import React, { useRef } from "react";
+import emailjs from "@emailjs/browser";
 
 function Contact() {
+  const form = useRef();
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_briokgl",
+        "template_39bv6ho",
+        form.current,
+        "bcxNIMGXEvYqptkNq"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+    e.target.reset();
+  };
   return (
     <div
       name="contact"
@@ -14,16 +36,21 @@ function Contact() {
           </p>
         </div>
         <div className="flex justify-center items-center">
-          <form action="submit" className="flex flex-col w-full md:w-1/2">
+          <form
+            ref={form}
+            onSubmit={sendEmail}
+            action="submit"
+            className="flex flex-col w-full md:w-1/2"
+          >
             <input
               type="text"
-              name="name"
+              name="user_name"
               placeholder="enter your name"
               className="p-2 bg-transparent border-2 rounded-md text-white focus:outline-none"
             />
             <input
               type="text"
-              name="email"
+              name="user_email"
               placeholder="enter your email"
               className="p-2 my-6 bg-transparent border-2 rounded-md text-white focus:outline-none"
             />
