@@ -15,9 +15,11 @@ function Contact() {
       )
       .then(
         (result) => {
+          alert("Thank you very much for contacting me");
           console.log(result.text);
         },
         (error) => {
+          alert("there is something wrong, email didnt sent");
           console.log(error.text);
         }
       );
