@@ -49,7 +49,7 @@ function About() {
           I can make a meaningful difference for the company.
         </p>
       </div>
-      <div className="flex flex-col relative lg:pt-[2rem] lg:pb-[4rem] md:pt-[8rem] overflow-y-hidden h-full max-md:sticky max-md:top-[100%]">
+      <div className="flex justify-end flex-col relative lg:pt-[2rem] lg:pb-[4rem] md:pt-[8rem] overflow-y-hidden h-full max-md:sticky max-md:top-[100%]">
         <div className="flex justify-between mx-[5rem] pt-[8rem] md:pt-[8rem]  pb-[2rem] lg:pb-[6rem] max-[390px]:pb-[1rem] max-[360px]:pb-[3rem] z-10">
           <img
             src={javascript}
@@ -138,7 +138,7 @@ function About() {
             speed: 0.2,
             points: 3,
           }}
-          className="h-[60rem] absolute z-0"
+          className="h-[30rem] absolute z-0"
         />
       </div>
     </div>

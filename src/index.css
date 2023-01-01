@@ -2,6 +2,11 @@
 
 @tailwind base;
 @tailwind components;
+
+.spanStyle {
+  @apply relative w-[30px] h-[30px] mt-0 mr-[4px] rounded-full;
+}
+
 @tailwind utilities;
 
 @layer base {
