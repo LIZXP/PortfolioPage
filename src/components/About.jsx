@@ -22,40 +22,6 @@ function About() {
       name="about"
       className="w-full min-h-screen md:pt-[2rem] text-white bg-[#001122] max-[415px]:pt-[2.4rem] max-[391px]:pt-[2rem] max-[413px]:pt-[2rem] "
     >
-      <div className="relative w-full h-screen z-50 overflow-hidden">
-        <div className="relative flex [&>*:nth-child(odd)]:shadow-[0_0_0_10px_#4fc3dc44,0_0_50px_#4fc3dc44,0_0_100px_#4fc3dc44] [&>*:nth-child(odd)]:bg-[#4fc3dc] [&>*:nth-child(even)]:shadow-[0_0_0_10px_#ff2d7544,0_0_50px_#ff2d75,0_0_100px_#ff2d75] [&>*:nth-child(even)]:bg-[#ff2d75] [&>span]:animate-bubble [&>*]:animate-bubble">
-          <span className="spanStyle" style={{ "--i": 14 }}></span>
-          <span className="spanStyle"></span>
-          <span className="spanStyle"></span>
-          <span className="spanStyle"></span>
-          <span className="spanStyle"></span>
-          <span className="spanStyle"></span>
-          <span className="spanStyle"></span>
-          <span className="spanStyle"></span>
-          <span className="spanStyle"></span>
-          <span className="spanStyle"></span>
-          <span className="spanStyle"></span>
-          <span className="spanStyle"></span>
-          <span className="spanStyle"></span>
-          <span className="spanStyle"></span>
-          <span className="spanStyle"></span>
-          <span className="spanStyle"></span>
-          <span className="spanStyle"></span>
-          <span className="spanStyle"></span>
-          <span className="spanStyle"></span>
-          <span className="spanStyle"></span>
-          <span className="spanStyle"></span>
-          <span className="spanStyle"></span>
-          <span className="spanStyle"></span>
-          <span className="spanStyle"></span>
-          <span className="spanStyle"></span>
-          <span className="spanStyle"></span>
-          <span className="spanStyle"></span>
-          <span className="spanStyle"></span>
-          <span className="spanStyle"></span>
-          <span className="spanStyle"></span>
-        </div>
-      </div>
       <div className="mx-auto max-[1022px]:px-8 pt-[4rem] max-[413px]:pb-[0rem] pb-[2rem] flex flex-col justify-center max-[360px]:pt-[2rem] w-full max-w-screen-2xl max-[1600px]:pl-[3rem]">
         <div className="font-bold md:text-5xl pb-6 text-[#f87171] p-6">
           <p className="text-4xl font-bold inline border-b-4 border-gray-500">
@@ -83,7 +49,7 @@ function About() {
           I can make a meaningful difference for the company.
         </p>
       </div>
-      <div className="flex flex-col relative lg:pt-[2rem] lg:pb-[4rem] md:pt-[8rem] overflow-y-hidden h-full max-md:sticky max-md:top-[100%]">
+      <div className="flex justify-end flex-col relative lg:pt-[2rem] lg:pb-[4rem] md:pt-[8rem] overflow-y-hidden h-full max-md:sticky max-md:top-[100%]">
         <div className="flex justify-between mx-[5rem] pt-[8rem] md:pt-[8rem]  pb-[2rem] lg:pb-[6rem] max-[390px]:pb-[1rem] max-[360px]:pb-[3rem] z-10">
           <img
             src={javascript}
@@ -172,7 +138,7 @@ function About() {
             speed: 0.2,
             points: 3,
           }}
-          className="h-[60rem] absolute z-0"
+          className="h-[30rem] absolute z-0"
         />
       </div>
     </div>

@@ -1,7 +1,7 @@
 import React from "react";
 import background from "../assets/bg.svg";
 import { HiArrowNarrowRight } from "react-icons/hi";
-import mtm from "../assets/eve.svg";
+import mtm from "../assets/astro.png";
 import "./title.scss";
 import Typewriter from "typewriter-effect";
 import { Link } from "react-scroll";
@@ -58,8 +58,12 @@ function Main() {
             </Link>
           </div>
         </div>
-        <div className="max-w-screen-lg w-fit lg:w-1/4 md:items-center flex-shrink-[0.5]">
-          <img src={mtm} alt="evolution monkey to man" />
+        <div className="max-w-screen-lg w-fit lg:w-[33%] md:items-center flex-shrink-[0.5]">
+          <img
+            src={mtm}
+            alt="evolution monkey to man"
+            className="rounded-full"
+          />
         </div>
       </div>
     </div>
