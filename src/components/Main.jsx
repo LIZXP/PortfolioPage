@@ -66,7 +66,7 @@ function Main() {
           <img
             src={mtm}
             alt="evolution monkey to man"
-            className="rounded-full"
+            className="animate-space"
           />
         </div>
       </div>

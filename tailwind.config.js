@@ -4,8 +4,8 @@ module.exports = {
   theme: {
     extend: {
       animation: {
-        float: "float 7s infinite",
-        bubble: "bubble 15s linear infinite",
+        float: "float 9s infinite",
+        space: "space 9s ease-in-out infinite",
       },
       keyframes: {
         float: {
@@ -22,9 +22,16 @@ module.exports = {
             timingFunction: "ease-in-out",
           },
         },
-        bubble: {
-          "0%": { transform: "translateY(100vh) scale(0)" },
-          "100%": { transform: "translateY(-10vh) scale(1)" },
+        space: {
+          "0%": {
+            transform: "translateY(0%)",
+          },
+          "50%": {
+            transform: "translateY(-5%)",
+          },
+          "100%": {
+            transform: "translateY(0%)",
+          },
         },
       },
     },
