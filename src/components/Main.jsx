@@ -27,7 +27,10 @@ function Main() {
             <span id="full-stack">
               <Typewriter
                 onInit={(typewriter) => {
-                  typewriter.typeString("A Full Stack Developer").start();
+                  typewriter
+                    .typeString("A Full Stack Developer")
+                    .start()
+                    .pauseFor(3000);
                 }}
                 options={{
                   cursor: "",
@@ -59,11 +62,11 @@ function Main() {
             </Link>
           </div>
         </div>
-        <div className="max-w-screen-lg w-fit lg:w-[33%] md:items-center flex-shrink-[0.5] max-[412px]:w-[86%] max-[360px]:w-[55%]">
+        <div className="max-w-screen-lg w-fit lg:w-[45%] md:items-center flex-shrink-[0.5] max-[412px]:w-[86%] max-[360px]:w-[55%]">
           <img
             src={mtm}
             alt="evolution monkey to man"
-            className="rounded-full"
+            className="animate-space"
           />
         </div>
       </div>
