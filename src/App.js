@@ -1,5 +1,6 @@
 import About from "./components/About";
 import Contact from "./components/Contact";
+import Loader from "./components/Loader";
 import Main from "./components/Main";
 import NavBar from "./components/NavBar";
 import Portfolio from "./components/Portfolio";
@@ -13,6 +14,7 @@ function App() {
       <About />
       <Portfolio />
       <Contact />
+      <Loader />
       <SocialLinks />
     </div>
   );

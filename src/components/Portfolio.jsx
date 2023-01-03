@@ -17,7 +17,7 @@ function Portfolio() {
           </p>
           <p className="py-6">Check out my recent projects</p>
         </div>
-        <div className="grid sm:grid-cols-2 max-[420px]:gap-y-[1rem] md:gap-y-[2rem] md:px-12 sm:px-0">
+        <div className="grid sm:grid-cols-2 max-[420px]:gap-y-[1rem] md:gap-y-[3rem] md:px-[9rem] sm:px-0">
           {ports.map(({ src }, i) => (
             <div
               key={i}
