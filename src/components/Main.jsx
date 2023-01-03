@@ -5,10 +5,11 @@ import mtm from "../assets/astro.png";
 import "./title.scss";
 import Typewriter from "typewriter-effect";
 import { Link } from "react-scroll";
+import { motion } from "framer-motion";
 
 function Main() {
   return (
-    <div
+    <motion.div
       className="h-screen w-screen"
       style={{
         backgroundImage: "url(" + background + ")",
@@ -18,6 +19,8 @@ function Main() {
         height: "100vh",
         weight: "100vw",
       }}
+      initial={{ opacity: 0.8 }}
+      animate={{ opacity: 1 }}
       name="home"
     >
       <div className="mx-auto px-4 flex flex-col items-center justify-center pt-36 max-[360px]:pt-[6rem] md:flex-row md:h-full container">
@@ -70,7 +73,7 @@ function Main() {
           />
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }
 

@@ -6,7 +6,6 @@ module.exports = {
       animation: {
         float: "float 9s infinite",
         space: "space 9s ease-in-out infinite",
-        leaf: "leaf 4s linear infinite;",
       },
       keyframes: {
         float: {
@@ -28,21 +27,10 @@ module.exports = {
             transform: "translateY(0%)",
           },
           "50%": {
-            transform: "translateY(-5%)",
+            transform: "translateY(-6%)",
           },
           "100%": {
             transform: "translateY(0%)",
-          },
-        },
-        leaf: {
-          "0%": {
-            transform: "translateX(-100%) translateY(0%)",
-          },
-          "50%": {
-            transform: "translateX(100%) translateY(-10%)",
-          },
-          "100%": {
-            transform: "translateX(-100%) translateY(0%)",
           },
         },
       },
