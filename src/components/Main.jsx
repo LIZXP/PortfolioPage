@@ -24,7 +24,7 @@ function Main() {
       name="home"
     >
       <div className="mx-auto px-4 flex flex-col items-center justify-center pt-36 max-[360px]:pt-[6rem] md:flex-row md:h-full container">
-        <div className="flex flex-col justify-center px-6 max-sm:pb-[6rem] max-[412px]:pb-[2.4rem] max-[360px]:pb-[1rem] h-1/4 max-w-screen-xl lg:w-[53%]">
+        <div className="flex flex-col justify-center px-6 max-sm:pb-[6rem] max-[412px]:pb-[2.4rem] max-[360px]:pb-[1rem] max-[391px]:pb-[0rem] h-1/4 max-w-screen-xl lg:w-[53%]">
           <h1 className="text-2xl lg:text-6xl font-bold" id="title">
             Hola, I'am Peter, <br />
             <span id="full-stack">
