@@ -6,7 +6,7 @@ function Loader() {
       <div className="flex items-center justify-center h-full w-full m-auto">
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          className="h-[25rem] animate-pulse"
+          className="h-[33rem] animate-pulse"
           version="1.0"
           viewBox="0 0 2363 2363"
         >
