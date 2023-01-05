@@ -2,6 +2,8 @@ import React from "react";
 import stock from "../assets/Stock.mp4";
 import jun from "../assets/Jun.mp4";
 import sche from "../assets/Sche.mp4";
+import { GiSpiderWeb } from "react-icons/gi";
+import { FaGithub } from "react-icons/fa";
 
 function Portfolio() {
   const ports = [
@@ -23,7 +25,16 @@ function Portfolio() {
     },
     {
       src: jun,
-      tech: ["Ruby", "Rails", "Stripe API", "PostgreSQL", "Bootstrap"],
+      tech: [
+        "Ruby",
+        "Rails",
+        "Stripe API",
+        "PostgreSQL",
+        "Bootstrap",
+        "CSS",
+        "Cypress",
+        "RSpec",
+      ],
       disc: "A mini e-commerce application built with Ruby on Rails that allows visitors to view, purchase, and review products. Email receipts are sent upon a successful order that uses the Stripe API for secure transactions.",
       git: "https://github.com/LIZXP/jungle-rails",
       site: "",
@@ -56,31 +67,31 @@ function Portfolio() {
           </p>
           <p className="py-6">Check out my recent projects</p>
         </div>
-        <div className="grid sm:grid-cols-2 max-[420px]:gap-y-[1rem] md:gap-y-[3rem] md:px-[9rem] sm:px-0">
+        <div className="grid w-full sm:grid-cols-2 max-[420px]:gap-y-[1rem] md:gap-[3rem] pr-[2rem]">
           {ports.map(({ src, tech, disc, git, site }, i) => (
             <div
               key={i}
-              className="shadow-md sm:w-[17rem] md:w-[18rem] lg:w-[24rem] xl:w-[33rem] shadow-gray-600 rounded-lg duration-200 hover:scale-105"
+              className="shadow-md shadow-gray-600 rounded-lg duration-200 hover:scale-105 w-full relative"
             >
               <video src={src} loop autoPlay muted className="rounded-md" />
               <div className="flex flex-wrap justify-start mt-6">
                 {tech.map((d) => (
-                  <p className="flex justify-center items-center border-2 border-rose-500 text-xs hover:scale-110 duration-200 text-white m-1 w-[5rem] h-[1.2rem] font-semibold">
+                  <p className="flex justify-center items-center border-2 border-[#f87171] text-xs hover:scale-110 duration-200 text-white m-1 w-[5rem] h-[1.2rem] font-semibold">
                     {d}
                   </p>
                 ))}
               </div>
-              <div className="flex items-center justify-center">
+              <div className="flex justify-center">
                 {site ? (
-                  <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-125">
-                    <a href={site} target="_blank">
-                      Demo
+                  <button className="px-6 py-3 m-4 duration-200 hover:scale-125">
+                    <a href={site} target="_blank" rel="noreferrer">
+                      <GiSpiderWeb size={30} />
                     </a>
                   </button>
                 ) : null}
-                <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-125">
-                  <a href={git} target="_blank">
-                    Code
+                <button className="px-6 py-3 m-4 duration-200 hover:scale-125">
+                  <a href={git} target="_blank" rel="noreferrer">
+                    <FaGithub size={30} />
                   </a>
                 </button>
               </div>
