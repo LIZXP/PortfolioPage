@@ -51,7 +51,7 @@ function About() {
             bring my skills and experience to a full stack developer role where
             I can make a meaningful difference for the company.
           </p>
-          <div className="home__img w-[50%] ml-[10rem] max-lg:hidden"></div>
+          <div className="home__img ml-[10rem] max-lg:hidden"></div>
         </div>
       </div>
       <div className="flex justify-end flex-col relative lg:pt-[2rem] lg:pb-[4rem] md:pt-[8rem] overflow-y-hidden h-full max-md:sticky max-md:top-[100%]">
