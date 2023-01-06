@@ -15,12 +15,13 @@ import typescript from "../assets/typescript.svg";
 import python from "../assets/python.svg";
 import apollo from "../assets/apollo.svg";
 import Wave from "react-wavify";
+import "./hero.scss";
 
 function About() {
   return (
     <div
       name="about"
-      className="w-full min-h-screen md:pt-[2rem] text-white bg-[#001122] max-[415px]:pt-[2.4rem] max-[391px]:pt-[2rem] max-[413px]:pt-[2rem] "
+      className="w-full min-h-screen md:pt-[0rem] text-white bg-[#001122] max-[415px]:pt-[2.4rem] max-[391px]:pt-[2rem] max-[413px]:pt-[2rem] "
     >
       <div className="mx-auto max-[1022px]:px-8 pt-[4rem] max-[413px]:pb-[0rem] pb-[2rem] flex flex-col justify-center max-[360px]:pt-[2rem] w-full max-w-screen-2xl max-[1600px]:pl-[3rem]">
         <div className="font-bold md:text-5xl pb-6 text-[#f87171] p-6 max-[391px]:pt-0">
@@ -28,26 +29,30 @@ function About() {
             About
           </p>
         </div>
-        <p className="font-medium text-justify max-[360px]:text-left text-xs md:text-lg max-w-screen-lg p-6 max-[391px]:pt-0">
-          As a full stack developer with a background in financial accounting
-          and a passion for streamlining processes, I have the technical
-          expertise and real-world business experience necessary to succeed in a
-          challenging and dynamic developer role. My technical skills include
-          JavaScript, React, and Python, and I have used these technologies to
-          build a variety of projects, including a user-friendly investment
-          portfolio management application (StockOverWatch) using the React and
-          Chartjs frameworks, and a mini e-commerce application (Jungle-rails)
-          built with Ruby on Rails. In addition to my proficiency in these
-          languages and frameworks, I am skilled in using PostgreSQL, Git, and
-          Firebase, and I have experience with testing frameworks such as Jest,
-          Storybook, and Cypress. In my current role as an accounts payable
-          specialist, I have developed VBA scripts that increased the efficiency
-          of client disbursement processes by 50%, and I have mentored and
-          trained new employees to improve productivity. I am always eager to
-          learn and stay up to date on the latest technologies, and I am excited
-          to bring my skills and experience to a full stack developer role where
-          I can make a meaningful difference for the company.
-        </p>
+        <div className="flex flex-row">
+          <p className="font-medium text-justify lg:w-[50%] max-[360px]:text-left text-xs md:text-lg max-w-screen-lg pl-6 max-[391px]:pt-0">
+            As a full stack developer with a background in financial accounting
+            and a passion for streamlining processes, I have the technical
+            expertise and real-world business experience necessary to succeed in
+            a challenging and dynamic developer role. My technical skills
+            include JavaScript, React, and Python, and I have used these
+            technologies to build a variety of projects, including a
+            user-friendly investment portfolio management application
+            (StockOverWatch) using the React and Chartjs frameworks, and a mini
+            e-commerce application (Jungle-rails) built with Ruby on Rails. In
+            addition to my proficiency in these languages and frameworks, I am
+            skilled in using PostgreSQL, Git, and Firebase, and I have
+            experience with testing frameworks such as Jest, Storybook, and
+            Cypress. In my current role as an accounts payable specialist, I
+            have developed VBA scripts that increased the efficiency of client
+            disbursement processes by 50%, and I have mentored and trained new
+            employees to improve productivity. I am always eager to learn and
+            stay up to date on the latest technologies, and I am excited to
+            bring my skills and experience to a full stack developer role where
+            I can make a meaningful difference for the company.
+          </p>
+          <div className="home__img ml-[10rem] max-lg:hidden"></div>
+        </div>
       </div>
       <div className="flex justify-end flex-col relative lg:pt-[2rem] lg:pb-[4rem] md:pt-[8rem] overflow-y-hidden h-full max-md:sticky max-md:top-[100%]">
         <div className="flex justify-between mx-[5rem] pt-[8rem] md:pt-[8rem]  pb-[2rem] lg:pb-[6rem] max-[390px]:pb-[1rem] max-[360px]:pb-[3rem] z-10">
@@ -130,7 +135,7 @@ function About() {
           />
         </div>
         <Wave
-          fill="#fac662"
+          fill="url(#gradient)"
           paused={false}
           options={{
             height: 60,
@@ -139,7 +144,14 @@ function About() {
             points: 3,
           }}
           className="h-[30rem] absolute max-[391px]:h-[15rem]  max-[412px]:h-[15rem] z-0"
-        />
+        >
+          <defs>
+            <linearGradient id="gradient" gradientTransform="rotate(90)">
+              <stop offset="10%" stopColor="#FF5F6D" />
+              <stop offset="90%" stopColor="#FFC371" />
+            </linearGradient>
+          </defs>
+        </Wave>
       </div>
     </div>
   );
