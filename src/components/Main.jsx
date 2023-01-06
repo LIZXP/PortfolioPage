@@ -21,6 +21,7 @@ function Main() {
       }}
       initial={{ opacity: 0.8 }}
       animate={{ opacity: 1 }}
+      transition={{ duration: 0.8, ease: "easeOut" }}
       name="home"
     >
       <div className="mx-auto px-4 flex flex-col items-center justify-center pt-36 max-[360px]:pt-[6rem] md:flex-row md:h-full container">
