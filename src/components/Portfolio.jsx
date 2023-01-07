@@ -75,8 +75,11 @@ function Portfolio() {
             >
               <video src={src} loop autoPlay muted className="rounded-md" />
               <div className="flex flex-wrap justify-start mt-6">
-                {tech.map((d) => (
-                  <p className="flex justify-center items-center border-2 border-[#f87171] text-xs hover:scale-110 duration-200 text-white m-1 w-[5rem] h-[1.2rem] font-semibold">
+                {tech.map((d, i) => (
+                  <p
+                    className="flex justify-center items-center border-2 border-[#f87171] text-xs hover:scale-110 duration-200 text-white m-1 w-[5rem] h-[1.2rem] font-semibold"
+                    key={i}
+                  >
                     {d}
                   </p>
                 ))}

@@ -4,7 +4,7 @@ import { HiArrowNarrowRight } from "react-icons/hi";
 import mtm from "../assets/astro.png";
 import "./title.scss";
 import Typewriter from "typewriter-effect";
-import { Link } from "react-scroll";
+import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 
 function Main() {
@@ -54,9 +54,7 @@ function Main() {
           </p>
           <div>
             <Link
-              to="project"
-              smooth
-              duration={600}
+              to="/project"
               className="w-fit px-6 py-3 my-2 flex items-center rounded-md cursor-pointer group bg-gradient-to-r from-[#fba2a2] to-[#f87171] text-xl text-white font-extrabold"
             >
               Projects

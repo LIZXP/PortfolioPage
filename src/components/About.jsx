@@ -19,18 +19,11 @@ import "./hero.scss";
 
 function About() {
   return (
-    <div
-      name="about"
-      className="w-full min-h-screen md:pt-[0rem] text-white bg-[#001122] max-[415px]:pt-[2.4rem] max-[391px]:pt-[2rem] max-[413px]:pt-[2rem] "
-    >
-      <div className="mx-auto max-[1022px]:px-8 pt-[4rem] max-[413px]:pb-[0rem] pb-[2rem] flex flex-col justify-center max-[360px]:pt-[2rem] w-full max-w-screen-2xl max-[1600px]:pl-[3rem]">
-        <div className="font-bold md:text-5xl pb-6 text-[#f87171] p-6 max-[391px]:pt-0">
-          <p className="text-4xl font-bold inline border-b-4 border-gray-500">
-            About
-          </p>
-        </div>
-        <div className="flex flex-row">
-          <p className="font-medium text-justify lg:w-[50%] max-[360px]:text-left text-xs md:text-lg max-w-screen-lg pl-6 max-[391px]:pt-0">
+    <div name="about" className="w-screen h-screen relative overflow-hidden">
+      <div className="flex pt-[6rem]">
+        <div className="flex flex-col w-[50%]">
+          <p className="flex">About</p>
+          <p className="">
             As a full stack developer with a background in financial accounting
             and a passion for streamlining processes, I have the technical
             expertise and real-world business experience necessary to succeed in
@@ -51,11 +44,11 @@ function About() {
             bring my skills and experience to a full stack developer role where
             I can make a meaningful difference for the company.
           </p>
-          <div className="home__img ml-[10rem] max-lg:hidden"></div>
         </div>
+        <div className="home__img ml-[10rem] max-lg:hidden"></div>
       </div>
-      <div className="flex justify-end flex-col relative lg:pt-[2rem] lg:pb-[4rem] md:pt-[8rem] overflow-y-hidden h-full max-md:sticky max-md:top-[100%]">
-        <div className="flex justify-between mx-[5rem] pt-[8rem] md:pt-[8rem]  pb-[2rem] lg:pb-[6rem] max-[390px]:pb-[1rem] max-[360px]:pb-[3rem] z-10">
+      <div className="col-span-2">
+        <div className="w-full flex justify-evenly absolute bottom-6 z-10">
           <img
             src={javascript}
             alt="programming languages"
@@ -92,7 +85,7 @@ function About() {
             className="w-5 md:w-10 xl:w-[3rem] animate-float animation-delay-2000"
           />
         </div>
-        <div className="flex justify-evenly pb-[2rem] md:pb-[6rem] z-10">
+        <div className="w-full flex justify-evenly absolute bottom-3 md:pb-[6rem] z-10">
           <img
             src={django}
             alt="programming languages"
@@ -143,7 +136,7 @@ function About() {
             speed: 0.2,
             points: 3,
           }}
-          className="h-[30rem] absolute max-[391px]:h-[15rem]  max-[412px]:h-[15rem] z-0"
+          className="absolute bottom-0 overflow-hidden w-full h-[20rem] z-0"
         >
           <defs>
             <linearGradient id="gradient" gradientTransform="rotate(90)">
