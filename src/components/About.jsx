@@ -25,7 +25,7 @@ function About() {
     >
       <div className="mx-auto max-[1022px]:px-8 pt-[4rem] max-[413px]:pb-[0rem] pb-[2rem] flex flex-col justify-center max-[360px]:pt-[2rem] w-full max-w-screen-2xl max-[1600px]:pl-[3rem]">
         <div className="font-bold md:text-5xl pb-6 text-[#f87171] p-6 max-[391px]:pt-0">
-          <p className="text-4xl font-bold inline border-b-4 border-gray-500">
+          <p className="text-4xl font-bold inline border-b-4 border-gray-600">
             About
           </p>
         </div>
