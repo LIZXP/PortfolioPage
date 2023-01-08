@@ -72,7 +72,13 @@ function Portfolio() {
           </p>
           <p className="py-6">Check out my recent projects</p>
         </div>
-        <div className="grid w-full sm:grid-cols-2 max-[420px]:gap-y-[1rem] md:gap-[3rem] pr-[2rem]">
+        <motion.div
+          className="grid w-full sm:grid-cols-2 max-[420px]:gap-y-[1rem] md:gap-[3rem] pr-[2rem]"
+          initial={{ opacity: 0, x: "-100%" }}
+          animate={{ opacity: 1, x: 0 }}
+          exit={{ opacity: 0, x: "-100%" }}
+          transition={{ type: "spring", delay: 0.5 }}
+        >
           {ports.map(({ src, tech, disc, git, site }, i) => (
             <div
               key={i}
@@ -105,7 +111,7 @@ function Portfolio() {
               </div>
             </div>
           ))}
-        </div>
+        </motion.div>
       </div>
     </motion.div>
   );

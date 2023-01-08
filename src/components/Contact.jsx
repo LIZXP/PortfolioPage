@@ -44,7 +44,7 @@ function Contact() {
             Submit the form to get in touch with me
           </p>
         </div>
-        <div className="flex justify-center items-center">
+        <motion.div className="flex justify-center items-center">
           <form
             ref={form}
             onSubmit={sendEmail}
@@ -73,7 +73,7 @@ function Contact() {
               Submit
             </button>
           </form>
-        </div>
+        </motion.div>
       </div>
     </motion.div>
   );
