@@ -72,7 +72,7 @@ function About() {
         <div className="home__img ml-[10rem] max-lg:hidden"></div>
       </div>
       <div className="col-span-2">
-        <div className="w-full flex justify-evenly absolute bottom-6 z-10">
+        <div className="w-full flex justify-evenly absolute bottom-10 z-10">
           <img
             src={javascript}
             alt="programming languages"
@@ -109,7 +109,7 @@ function About() {
             className="w-5 md:w-10 xl:w-[3rem] animate-float animation-delay-2000"
           />
         </div>
-        <div className="w-full flex justify-evenly absolute bottom-3 md:pb-[6rem] z-10">
+        <div className="w-full flex justify-evenly absolute max-sm:bottom-[7rem] bottom-20 md:pb-[6rem] z-10">
           <img
             src={django}
             alt="programming languages"
