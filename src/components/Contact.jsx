@@ -44,7 +44,13 @@ function Contact() {
             Submit the form to get in touch with me
           </p>
         </div>
-        <motion.div className="flex justify-center items-center">
+        <motion.div
+          className="flex justify-center items-center"
+          initial={{ opacity: 0, y: "-100%" }}
+          animate={{ opacity: 1, y: 0 }}
+          exit={{ opacity: 0, y: "-100%" }}
+          transition={{ type: "spring", delay: 0.5 }}
+        >
           <form
             ref={form}
             onSubmit={sendEmail}
