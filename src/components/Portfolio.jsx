@@ -58,7 +58,7 @@ function Portfolio() {
   return (
     <div
       name="project"
-      className="w-screen text-[#f87171] pt-[4rem] md:pt-[8rem] lg:pt-[5rem] max-sm:mx-0 bg-[#012] max-[1022px]:pl-[0rem] max-[1600px]:pl-[3rem]"
+      className="w-screen text-[#f87171] pt-[6rem] md:pt-[8rem] lg:pt-[5rem] max-sm:mx-0 bg-[#012] max-[1022px]:pl-[0rem] max-[1600px]:pl-[3rem]"
     >
       <div className="max-w-screen-2xl p-6 mx-auto flex flex-col justify-center w-full h-full">
         <div className="pb-1">

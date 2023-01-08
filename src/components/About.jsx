@@ -19,11 +19,16 @@ import "./hero.scss";
 
 function About() {
   return (
-    <div name="about" className="w-screen h-screen relative overflow-hidden">
-      <div className="flex pt-[6rem]">
-        <div className="flex flex-col w-[50%]">
-          <p className="flex">About</p>
-          <p className="">
+    <div
+      name="about"
+      className="w-screen h-screen relative overflow-hidden bg-[#012] text-white"
+    >
+      <div className="flex pt-[6.5rem] justify-center px-[3rem]">
+        <div className="flex flex-col lg:w-[50%] lg:px-[1rem]">
+          <p className="text-4xl font-bold inline w-[11%] border-b-4 border-gray-500 text-[#f87171]">
+            About
+          </p>
+          <p className="py-6">
             As a full stack developer with a background in financial accounting
             and a passion for streamlining processes, I have the technical
             expertise and real-world business experience necessary to succeed in
@@ -136,7 +141,7 @@ function About() {
             speed: 0.2,
             points: 3,
           }}
-          className="absolute bottom-0 overflow-hidden w-full h-[20rem] z-0"
+          className="absolute bottom-0 overflow-hidden w-full h-[26rem] z-0"
         >
           <defs>
             <linearGradient id="gradient" gradientTransform="rotate(90)">
