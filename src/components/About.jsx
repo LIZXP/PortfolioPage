@@ -74,7 +74,7 @@ function About() {
           <p className="text-4xl font-bold inline w-[11%] border-b-4 border-gray-500 text-[#f87171]">
             About
           </p>
-          <p className="py-6 max-sm:text-xs text-justify">
+          <p className="py-6 max-sm:text-xs text-justify max-[361px]:text-[0.65rem]">
             As a full stack developer with a background in financial accounting
             and a passion for streamlining processes, I have the technical
             expertise and real-world business experience necessary to succeed in
