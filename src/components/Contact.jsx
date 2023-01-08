@@ -1,5 +1,6 @@
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
+import { motion } from "framer-motion";
 
 function Contact() {
   const form = useRef();
@@ -26,13 +27,18 @@ function Contact() {
     e.target.reset();
   };
   return (
-    <div
+    <motion.div
       name="contact"
       className="w-full h-screen p-4 text-[#f87171] bg-[#001122] max-[1022px]:pl-[0rem] max-[1600px]:pl-[3rem]"
+      initial={{ opacity: 0.8 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 0.8, ease: "easeOut" }}
     >
       <div className="flex flex-col p-6 justify-center max-w-screen-2xl mx-auto h-full ">
         <div className="pb-8">
-          <p className="text-4xl font-bold inline border-b-4">Contact</p>
+          <p className="text-4xl font-bold inline border-b-4 border-gray-500">
+            Contact
+          </p>
           <p className="py-6 text-xl font-semibold">
             Submit the form to get in touch with me
           </p>
@@ -68,7 +74,7 @@ function Contact() {
           </form>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }
 

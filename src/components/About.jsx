@@ -16,6 +16,7 @@ import python from "../assets/python.svg";
 import apollo from "../assets/apollo.svg";
 import Wave from "react-wavify";
 import "./hero.scss";
+import { motion } from "framer-motion";
 
 function About() {
   const icon1 = [
@@ -65,9 +66,12 @@ function About() {
     { icon: apollo, style: "w-5 md:w-10 xl:w-[3rem] animate-float" },
   ];
   return (
-    <div
+    <motion.div
       name="about"
       className="w-screen h-screen relative overflow-hidden bg-[#012] text-white"
+      initial={{ opacity: 0.8 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 0.8, ease: "easeOut" }}
     >
       <div className="flex pt-[6.5rem] justify-center max-sm:px-6 md:px-[3rem]">
         <div className="flex flex-col lg:w-[50%] lg:px-[1rem]">
@@ -138,7 +142,7 @@ function About() {
           </defs>
         </Wave>
       </div>
-    </div>
+    </motion.div>
   );
 }
 

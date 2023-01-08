@@ -7,6 +7,7 @@ import Portfolio from "./components/Portfolio";
 import SocialLinks from "./components/SocialLinks";
 import Loader from "./components/Loader";
 import { Routes, Route } from "react-router-dom";
+import { AnimatePresence } from "framer-motion";
 
 function App() {
   const [loading, setLoading] = useState(false);
@@ -29,14 +30,16 @@ function App() {
         <Loader />
       ) : (
         <>
-          <Routes>
-            <Route path="/" element={<NavBar />}>
-              <Route index="true" element={<Main />} />
-              <Route path="about" element={<About />} />
-              <Route path="project" element={<Portfolio />} />
-              <Route path="contact" element={<Contact />} />
-            </Route>
-          </Routes>
+          <AnimatePresence>
+            <Routes>
+              <Route path="/" element={<NavBar />}>
+                <Route index="true" element={<Main />} />
+                <Route path="about" element={<About />} />
+                <Route path="project" element={<Portfolio />} />
+                <Route path="contact" element={<Contact />} />
+              </Route>
+            </Routes>
+          </AnimatePresence>
           <SocialLinks />
         </>
       )}
