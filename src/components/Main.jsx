@@ -32,14 +32,14 @@ function Main() {
             id="title"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ delay: 0.2, duration: 0.8 }}
+            transition={{ delay: 0.3, duration: 0.8 }}
           >
             Hola, I'am Peter, <br />
             <motion.span
               id="full-stack"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
-              transition={{ delay: 0.8, duration: 0.8 }}
+              transition={{ delay: 0.6, duration: 0.8 }}
             >
               <Typewriter
                 onInit={(typewriter) => {
@@ -59,7 +59,7 @@ function Main() {
             className="font-semibold pt-8 text-sm lg:text-base pb-6 text-white text-justify"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ delay: 1.5, duration: 0.8 }}
+            transition={{ delay: 1.2, duration: 0.8 }}
           >
             Motivated and detail-oriented Full stack developer with expertise in
             JavaScript, React, and Python, seeking a challenging and dynamic
@@ -72,7 +72,7 @@ function Main() {
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ delay: 2, duration: 0.8 }}
+            transition={{ delay: 1.5, duration: 0.8 }}
           >
             <Link
               to="/project"
@@ -89,7 +89,7 @@ function Main() {
           className="max-w-screen-lg w-fit lg:w-[45%] md:items-center flex-shrink-[0.5] max-[412px]:w-[86%] max-[360px]:w-[55%]"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ delay: 1.2, duration: 0.8 }}
+          transition={{ delay: 1, duration: 0.8 }}
         >
           <img
             src={mtm}

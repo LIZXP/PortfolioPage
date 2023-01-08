@@ -79,7 +79,12 @@ function About() {
           <p className="text-4xl font-bold inline w-[11%] border-b-4 border-gray-500 text-[#f87171]">
             About
           </p>
-          <p className="py-6 max-sm:text-xs text-justify max-[361px]:text-[0.65rem]">
+          <motion.p
+            className="py-6 max-sm:text-xs text-justify max-[361px]:text-[0.65rem]"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.5, duration: 0.8 }}
+          >
             As a full stack developer with a background in financial accounting
             and a passion for streamlining processes, I have the technical
             expertise and real-world business experience necessary to succeed in
@@ -99,11 +104,20 @@ function About() {
             stay up to date on the latest technologies, and I am excited to
             bring my skills and experience to a full stack developer role where
             I can make a meaningful difference for the company.
-          </p>
+          </motion.p>
         </div>
-        <div className="home__img ml-[10rem] max-lg:hidden"></div>
+        <motion.div
+          className="home__img ml-[10rem] max-lg:hidden"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 1, duration: 0.8 }}
+        ></motion.div>
       </div>
-      <div className="col-span-2">
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 1.5, duration: 0.8 }}
+      >
         <div className="w-full flex justify-evenly absolute bottom-10 z-10">
           {icon1.map(({ icon, style }, i) => (
             <img
@@ -142,7 +156,7 @@ function About() {
             </linearGradient>
           </defs>
         </Wave>
-      </div>
+      </motion.div>
     </motion.div>
   );
 }
