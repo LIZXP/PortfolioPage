@@ -19,23 +19,50 @@ import "./hero.scss";
 
 function About() {
   const icon1 = [
-    { icon: javascript },
-    { icon: sass },
-    { icon: react },
-    { icon: typescript },
-    { icon: html },
-    { icon: python },
-    { icon: redux },
+    { icon: javascript, style: "w-5 md:w-10 xl:w-[3rem] animate-float" },
+    {
+      icon: sass,
+      style: "w-5 md:w-10 xl:w-[3rem] animate-float animation-delay-2000",
+    },
+    {
+      icon: react,
+      style: "w-5 md:w-10 xl:w-[3rem] animate-float animation-delay-3000",
+    },
+    { icon: typescript, style: "w-5 md:w-10 xl:w-[3rem] animate-float" },
+    {
+      icon: html,
+      style: "w-5 md:w-10 xl:w-[3rem] animate-float animation-delay-2000",
+    },
+    { icon: python, style: "w-5 md:w-10 xl:w-[3rem] animate-float" },
+    {
+      icon: redux,
+      style: "w-5 md:w-10 xl:w-[3rem] animate-float animation-delay-2000",
+    },
   ];
   const icon2 = [
-    { icon: django },
-    { icon: css },
-    { icon: mongodb },
-    { icon: graphql },
-    { icon: tailwind },
-    { icon: firebase },
-    { icon: next },
-    { icon: apollo },
+    {
+      icon: django,
+      style: "w-5 md:w-10 xl:w-[3rem] animate-float animation-delay-2000",
+    },
+    {
+      icon: css,
+      style: "w-5 md:w-10 xl:w-[3rem] animate-float animation-delay-3000",
+    },
+    { icon: mongodb, style: "w-5 md:w-10 xl:w-[3rem] animate-float" },
+    {
+      icon: graphql,
+      style: "w-5 md:w-10 xl:w-[3rem] animate-float animation-delay-3000",
+    },
+    {
+      icon: tailwind,
+      style: "w-5 md:w-10 xl:w-[3rem] animate-float animation-delay-2000",
+    },
+    { icon: firebase, style: "w-5 md:w-10 xl:w-[3rem] animate-float" },
+    {
+      icon: next,
+      style: "w-5 md:w-10 xl:w-[3rem] animate-float animation-delay-2000",
+    },
+    { icon: apollo, style: "w-5 md:w-10 xl:w-[3rem] animate-float" },
   ];
   return (
     <div
@@ -73,83 +100,24 @@ function About() {
       </div>
       <div className="col-span-2">
         <div className="w-full flex justify-evenly absolute bottom-10 z-10">
-          <img
-            src={javascript}
-            alt="programming languages"
-            className="w-5 md:w-10 xl:w-[3rem] animate-float"
-          />
-          <img
-            src={sass}
-            alt="programming languages"
-            className="w-5 md:w-10 xl:w-[3rem] animate-float animation-delay-2000"
-          />
-          <img
-            src={react}
-            alt="programming languages"
-            className="w-5 md:w-10 xl:w-[3rem] animate-float animation-delay-3000"
-          />
-          <img
-            src={typescript}
-            alt="programming languages"
-            className="w-5 md:w-10 xl:w-[3rem] animate-float"
-          />
-          <img
-            src={html}
-            alt="programming languages"
-            className="w-5 md:w-10 xl:w-[3rem] animate-float animation-delay-2000"
-          />
-          <img
-            src={python}
-            alt="programming languages"
-            className="w-5 md:w-10 xl:w-[3rem] animate-float"
-          />
-          <img
-            src={redux}
-            alt="programming languages"
-            className="w-5 md:w-10 xl:w-[3rem] animate-float animation-delay-2000"
-          />
+          {icon1.map(({ icon, style }, i) => (
+            <img
+              src={icon}
+              key={i}
+              alt="programming languages"
+              className={style}
+            />
+          ))}
         </div>
         <div className="w-full flex justify-evenly absolute max-sm:bottom-[7rem] bottom-20 md:pb-[6rem] z-10">
-          <img
-            src={django}
-            alt="programming languages"
-            className="w-5 md:w-10 xl:w-[3rem] animate-float animation-delay-2000"
-          />
-          <img
-            src={css}
-            alt="programming languages"
-            className="w-5 md:w-10 xl:w-[3rem] animate-float animation-delay-3000"
-          />
-          <img
-            src={mongodb}
-            alt="programming languages"
-            className="w-5 md:w-10 xl:w-[3rem] animate-float"
-          />
-          <img
-            src={graphql}
-            alt="programming languages"
-            className="w-5 md:w-10 xl:w-[3rem] animate-float animation-delay-3000"
-          />
-          <img
-            src={tailwind}
-            alt="programming languages"
-            className="w-5 md:w-10 xl:w-[3rem] animate-float animation-delay-2000"
-          />
-          <img
-            src={firebase}
-            alt="programming languages"
-            className="w-5 md:w-10 xl:w-[3rem] animate-float"
-          />
-          <img
-            src={next}
-            alt="programming languages"
-            className="w-5 md:w-10 xl:w-[3rem] animate-float animation-delay-2000"
-          />
-          <img
-            src={apollo}
-            alt="programming languages"
-            className="w-5 md:w-10 xl:w-[3rem] animate-float"
-          />
+          {icon2.map(({ icon, style }, i) => (
+            <img
+              src={icon}
+              key={i}
+              alt="programming languages"
+              className={style}
+            />
+          ))}
         </div>
         <Wave
           fill="url(#gradient)"
