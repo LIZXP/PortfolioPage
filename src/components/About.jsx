@@ -72,6 +72,7 @@ function About() {
       initial={{ opacity: 0.8 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.8, ease: "easeOut" }}
+      exit={{ opacity: 0 }}
     >
       <div className="flex pt-[6.5rem] justify-center max-sm:px-6 md:px-[3rem]">
         <div className="flex flex-col lg:w-[50%] lg:px-[1rem]">

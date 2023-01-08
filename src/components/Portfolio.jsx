@@ -63,6 +63,7 @@ function Portfolio() {
       initial={{ opacity: 0.8 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.8, ease: "easeOut" }}
+      exit={{ opacity: 0 }}
     >
       <div className="max-w-screen-2xl p-6 mx-auto flex flex-col justify-center w-full h-full">
         <div className="pb-1">

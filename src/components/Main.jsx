@@ -22,13 +22,25 @@ function Main() {
       initial={{ opacity: 0.8 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.8, ease: "easeOut" }}
+      exit={{ opacity: 0 }}
       name="home"
     >
       <div className="mx-auto px-4 flex flex-col items-center justify-center pt-36 max-[360px]:pt-[6rem] md:flex-row md:h-full container">
         <div className="flex flex-col justify-center px-6 max-sm:pb-[6rem] max-[412px]:pb-[2.4rem] max-[360px]:pb-[1rem] max-[391px]:pb-[0rem] h-1/4 max-w-screen-xl lg:w-[53%]">
-          <h1 className="text-2xl lg:text-6xl font-bold" id="title">
+          <motion.h1
+            className="text-2xl lg:text-6xl font-bold"
+            id="title"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.2, duration: 0.8 }}
+          >
             Hola, I'am Peter, <br />
-            <span id="full-stack">
+            <motion.span
+              id="full-stack"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 0.8, duration: 0.8 }}
+            >
               <Typewriter
                 onInit={(typewriter) => {
                   typewriter
@@ -41,9 +53,14 @@ function Main() {
                   loop: true,
                 }}
               />
-            </span>
-          </h1>
-          <p className="font-semibold pt-8 text-sm lg:text-base pb-6 text-white text-justify">
+            </motion.span>
+          </motion.h1>
+          <motion.p
+            className="font-semibold pt-8 text-sm lg:text-base pb-6 text-white text-justify"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 1.5, duration: 0.8 }}
+          >
             Motivated and detail-oriented Full stack developer with expertise in
             JavaScript, React, and Python, seeking a challenging and dynamic
             role where I can use my technical skills and real-world business
@@ -51,8 +68,12 @@ function Main() {
             Proven ability to streamline processes and prioritize business
             functions, and a passion for continuously learning and staying up to
             date on the latest technologies.
-          </p>
-          <div>
+          </motion.p>
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 2, duration: 0.8 }}
+          >
             <Link
               to="/project"
               className="w-fit px-6 py-3 my-2 flex items-center rounded-md cursor-pointer group bg-gradient-to-r from-[#fba2a2] to-[#f87171] text-xl text-white font-extrabold"
@@ -62,15 +83,20 @@ function Main() {
                 <HiArrowNarrowRight size={18} className="ml-2" />
               </span>
             </Link>
-          </div>
+          </motion.div>
         </div>
-        <div className="max-w-screen-lg w-fit lg:w-[45%] md:items-center flex-shrink-[0.5] max-[412px]:w-[86%] max-[360px]:w-[55%]">
+        <motion.div
+          className="max-w-screen-lg w-fit lg:w-[45%] md:items-center flex-shrink-[0.5] max-[412px]:w-[86%] max-[360px]:w-[55%]"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 1.2, duration: 0.8 }}
+        >
           <img
             src={mtm}
             alt="evolution monkey to man"
             className="animate-space"
           />
-        </div>
+        </motion.div>
       </div>
     </motion.div>
   );

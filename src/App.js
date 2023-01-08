@@ -6,7 +6,7 @@ import NavBar from "./components/NavBar";
 import Portfolio from "./components/Portfolio";
 import SocialLinks from "./components/SocialLinks";
 import Loader from "./components/Loader";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, useLocation } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
 
 function App() {
@@ -24,13 +24,14 @@ function App() {
       );
     };
   }, []);
+  const location = useLocation();
   return (
     <div className="App">
       {loading ? (
         <Loader />
       ) : (
         <>
-          <AnimatePresence>
+          <AnimatePresence key={location.key}>
             <Routes>
               <Route path="/" element={<NavBar />}>
                 <Route index="true" element={<Main />} />

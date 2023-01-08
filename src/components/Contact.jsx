@@ -33,6 +33,7 @@ function Contact() {
       initial={{ opacity: 0.8 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.8, ease: "easeOut" }}
+      exit={{ opacity: 0 }}
     >
       <div className="flex flex-col p-6 justify-center max-w-screen-2xl mx-auto h-full ">
         <div className="pb-8">
