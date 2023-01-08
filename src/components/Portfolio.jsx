@@ -4,6 +4,7 @@ import jun from "../assets/Jun.mp4";
 import sche from "../assets/Sche.mp4";
 import { GiSpiderWeb } from "react-icons/gi";
 import { FaGithub } from "react-icons/fa";
+import { motion } from "framer-motion";
 
 function Portfolio() {
   const ports = [
@@ -56,9 +57,13 @@ function Portfolio() {
     },
   ];
   return (
-    <div
+    <motion.div
       name="project"
-      className="w-screen text-[#f87171] pt-[4rem] md:pt-[8rem] lg:pt-[5rem] max-sm:mx-0 bg-[#012] max-[1022px]:pl-[0rem] max-[1600px]:pl-[3rem]"
+      className="w-screen text-[#f87171] pt-[6rem] md:pt-[8rem] lg:pt-[5rem] max-sm:mx-0 bg-[#012] max-[1022px]:pl-[0rem] max-[1600px]:pl-[3rem]"
+      initial={{ opacity: 0.8 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 0.8, ease: "easeOut" }}
+      exit={{ opacity: 0 }}
     >
       <div className="max-w-screen-2xl p-6 mx-auto flex flex-col justify-center w-full h-full">
         <div className="pb-1">
@@ -67,7 +72,13 @@ function Portfolio() {
           </p>
           <p className="py-6">Check out my recent projects</p>
         </div>
-        <div className="grid w-full sm:grid-cols-2 max-[420px]:gap-y-[1rem] md:gap-[3rem] pr-[2rem]">
+        <motion.div
+          className="grid w-full sm:grid-cols-2 max-[420px]:gap-y-[1rem] md:gap-[3rem] pr-[2rem]"
+          initial={{ opacity: 0, x: "-100%" }}
+          animate={{ opacity: 1, x: 0 }}
+          exit={{ opacity: 0, x: "-100%" }}
+          transition={{ type: "spring", delay: 0.5 }}
+        >
           {ports.map(({ src, tech, disc, git, site }, i) => (
             <div
               key={i}
@@ -75,8 +86,11 @@ function Portfolio() {
             >
               <video src={src} loop autoPlay muted className="rounded-md" />
               <div className="flex flex-wrap justify-start mt-6">
-                {tech.map((d) => (
-                  <p className="flex justify-center items-center border-2 border-[#f87171] text-xs hover:scale-110 duration-200 text-white m-1 w-[5rem] h-[1.2rem] font-semibold">
+                {tech.map((d, i) => (
+                  <p
+                    className="flex justify-center items-center border-2 border-[#f87171] text-xs hover:scale-110 duration-200 text-white m-1 w-[5rem] h-[1.2rem] font-semibold"
+                    key={i}
+                  >
                     {d}
                   </p>
                 ))}
@@ -97,9 +111,9 @@ function Portfolio() {
               </div>
             </div>
           ))}
-        </div>
+        </motion.div>
       </div>
-    </div>
+    </motion.div>
   );
 }
 

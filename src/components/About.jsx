@@ -16,21 +16,75 @@ import python from "../assets/python.svg";
 import apollo from "../assets/apollo.svg";
 import Wave from "react-wavify";
 import "./hero.scss";
+import { motion } from "framer-motion";
 
 function About() {
+  const icon1 = [
+    { icon: javascript, style: "w-5 md:w-10 xl:w-[3rem] animate-float" },
+    {
+      icon: sass,
+      style: "w-5 md:w-10 xl:w-[3rem] animate-float animation-delay-2000",
+    },
+    {
+      icon: react,
+      style: "w-5 md:w-10 xl:w-[3rem] animate-float animation-delay-3000",
+    },
+    { icon: typescript, style: "w-5 md:w-10 xl:w-[3rem] animate-float" },
+    {
+      icon: html,
+      style: "w-5 md:w-10 xl:w-[3rem] animate-float animation-delay-2000",
+    },
+    { icon: python, style: "w-5 md:w-10 xl:w-[3rem] animate-float" },
+    {
+      icon: redux,
+      style: "w-5 md:w-10 xl:w-[3rem] animate-float animation-delay-2000",
+    },
+  ];
+  const icon2 = [
+    {
+      icon: django,
+      style: "w-5 md:w-10 xl:w-[3rem] animate-float animation-delay-2000",
+    },
+    {
+      icon: css,
+      style: "w-5 md:w-10 xl:w-[3rem] animate-float animation-delay-3000",
+    },
+    { icon: mongodb, style: "w-5 md:w-10 xl:w-[3rem] animate-float" },
+    {
+      icon: graphql,
+      style: "w-5 md:w-10 xl:w-[3rem] animate-float animation-delay-3000",
+    },
+    {
+      icon: tailwind,
+      style: "w-5 md:w-10 xl:w-[3rem] animate-float animation-delay-2000",
+    },
+    { icon: firebase, style: "w-5 md:w-10 xl:w-[3rem] animate-float" },
+    {
+      icon: next,
+      style: "w-5 md:w-10 xl:w-[3rem] animate-float animation-delay-2000",
+    },
+    { icon: apollo, style: "w-5 md:w-10 xl:w-[3rem] animate-float" },
+  ];
   return (
-    <div
+    <motion.div
       name="about"
-      className="w-full min-h-screen md:pt-[0rem] text-white bg-[#001122] max-[415px]:pt-[2.4rem] max-[391px]:pt-[2rem] max-[413px]:pt-[2rem] "
+      className="w-screen h-screen relative overflow-hidden bg-[#012] text-white"
+      initial={{ opacity: 0.8 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 0.8, ease: "easeOut" }}
+      exit={{ opacity: 0 }}
     >
-      <div className="mx-auto max-[1022px]:px-8 pt-[4rem] max-[413px]:pb-[0rem] pb-[2rem] flex flex-col justify-center max-[360px]:pt-[2rem] w-full max-w-screen-2xl max-[1600px]:pl-[3rem]">
-        <div className="font-bold md:text-5xl pb-6 text-[#f87171] p-6 max-[391px]:pt-0">
-          <p className="text-4xl font-bold inline border-b-4 border-gray-600">
+      <div className="flex pt-[6.5rem] justify-center max-sm:px-6 md:px-[3rem]">
+        <div className="flex flex-col lg:w-[50%] lg:px-[1rem]">
+          <p className="text-4xl font-bold inline w-[11%] border-b-4 border-gray-500 text-[#f87171]">
             About
           </p>
-        </div>
-        <div className="flex flex-row">
-          <p className="font-medium text-justify lg:w-[50%] max-[360px]:text-left text-xs md:text-lg max-w-screen-lg pl-6 max-[391px]:pt-0">
+          <motion.p
+            className="py-6 max-sm:text-xs text-justify max-[361px]:text-[0.65rem]"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.5, duration: 0.8 }}
+          >
             As a full stack developer with a background in financial accounting
             and a passion for streamlining processes, I have the technical
             expertise and real-world business experience necessary to succeed in
@@ -50,89 +104,39 @@ function About() {
             stay up to date on the latest technologies, and I am excited to
             bring my skills and experience to a full stack developer role where
             I can make a meaningful difference for the company.
-          </p>
-          <div className="home__img ml-[10rem] max-lg:hidden"></div>
+          </motion.p>
         </div>
+        <motion.div
+          className="home__img ml-[10rem] max-lg:hidden"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 1, duration: 0.8 }}
+        ></motion.div>
       </div>
-      <div className="flex justify-end flex-col relative lg:pt-[2rem] lg:pb-[4rem] md:pt-[8rem] overflow-y-hidden h-full max-md:sticky max-md:top-[100%]">
-        <div className="flex justify-between mx-[5rem] pt-[8rem] md:pt-[8rem]  pb-[2rem] lg:pb-[6rem] max-[390px]:pb-[1rem] max-[360px]:pb-[3rem] z-10">
-          <img
-            src={javascript}
-            alt="programming languages"
-            className="w-5 md:w-10 xl:w-[3rem] animate-float"
-          />
-          <img
-            src={sass}
-            alt="programming languages"
-            className="w-5 md:w-10 xl:w-[3rem] animate-float animation-delay-2000"
-          />
-          <img
-            src={react}
-            alt="programming languages"
-            className="w-5 md:w-10 xl:w-[3rem] animate-float animation-delay-3000"
-          />
-          <img
-            src={typescript}
-            alt="programming languages"
-            className="w-5 md:w-10 xl:w-[3rem] animate-float"
-          />
-          <img
-            src={html}
-            alt="programming languages"
-            className="w-5 md:w-10 xl:w-[3rem] animate-float animation-delay-2000"
-          />
-          <img
-            src={python}
-            alt="programming languages"
-            className="w-5 md:w-10 xl:w-[3rem] animate-float"
-          />
-          <img
-            src={redux}
-            alt="programming languages"
-            className="w-5 md:w-10 xl:w-[3rem] animate-float animation-delay-2000"
-          />
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 1.5, duration: 0.8 }}
+      >
+        <div className="w-full flex justify-evenly absolute bottom-10 z-10">
+          {icon1.map(({ icon, style }, i) => (
+            <img
+              src={icon}
+              key={i}
+              alt="programming languages"
+              className={style}
+            />
+          ))}
         </div>
-        <div className="flex justify-evenly pb-[2rem] md:pb-[6rem] z-10">
-          <img
-            src={django}
-            alt="programming languages"
-            className="w-5 md:w-10 xl:w-[3rem] animate-float animation-delay-2000"
-          />
-          <img
-            src={css}
-            alt="programming languages"
-            className="w-5 md:w-10 xl:w-[3rem] animate-float animation-delay-3000"
-          />
-          <img
-            src={mongodb}
-            alt="programming languages"
-            className="w-5 md:w-10 xl:w-[3rem] animate-float"
-          />
-          <img
-            src={graphql}
-            alt="programming languages"
-            className="w-5 md:w-10 xl:w-[3rem] animate-float animation-delay-3000"
-          />
-          <img
-            src={tailwind}
-            alt="programming languages"
-            className="w-5 md:w-10 xl:w-[3rem] animate-float animation-delay-2000"
-          />
-          <img
-            src={firebase}
-            alt="programming languages"
-            className="w-5 md:w-10 xl:w-[3rem] animate-float"
-          />
-          <img
-            src={next}
-            alt="programming languages"
-            className="w-5 md:w-10 xl:w-[3rem] animate-float animation-delay-2000"
-          />
-          <img
-            src={apollo}
-            alt="programming languages"
-            className="w-5 md:w-10 xl:w-[3rem] animate-float"
-          />
+        <div className="w-full flex justify-evenly absolute max-sm:bottom-[7rem] bottom-20 md:pb-[6rem] z-10">
+          {icon2.map(({ icon, style }, i) => (
+            <img
+              src={icon}
+              key={i}
+              alt="programming languages"
+              className={style}
+            />
+          ))}
         </div>
         <Wave
           fill="url(#gradient)"
@@ -143,7 +147,7 @@ function About() {
             speed: 0.2,
             points: 3,
           }}
-          className="h-[30rem] absolute max-[391px]:h-[15rem]  max-[412px]:h-[15rem] z-0"
+          className="absolute bottom-0 overflow-hidden w-full h-[26rem] z-0 max-sm:h-[18rem]"
         >
           <defs>
             <linearGradient id="gradient" gradientTransform="rotate(90)">
@@ -152,8 +156,8 @@ function About() {
             </linearGradient>
           </defs>
         </Wave>
-      </div>
-    </div>
+      </motion.div>
+    </motion.div>
   );
 }
 
