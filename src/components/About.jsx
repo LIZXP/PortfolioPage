@@ -102,7 +102,7 @@ function About() {
         </motion.p>
       </div>
       {isLaptop && (
-        <div className="order-2 col-start-8 col-span-5 row-span-2">
+        <div className="order-2 col-start-8 col-span-5 row-span-2 m-auto">
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
