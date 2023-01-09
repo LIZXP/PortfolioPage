@@ -10,7 +10,7 @@ import { motion } from "framer-motion";
 function Main() {
   return (
     <motion.div
-      className="h-screen w-screen overflow-auto scrollbar-hide"
+      className="h-screen w-screen overflow-scroll scrollbar-hide"
       style={{
         backgroundImage: "url(" + background + ")",
         backgroundPosition: "center",
@@ -25,8 +25,8 @@ function Main() {
       exit={{ opacity: 0 }}
       name="home"
     >
-      <div className="mx-auto px-4 flex flex-col items-center justify-center pt-36 max-[360px]:pt-[6rem] md:flex-row md:h-full container flex-shrink">
-        <div className="flex flex-col justify-center px-6 max-sm:pb-[6rem] max-[412px]:pb-[2.4rem] max-[360px]:pb-[1rem] max-[391px]:pb-[0rem] h-1/4 max-w-screen-xl lg:w-[53%]">
+      <div className="mx-auto px-4 flex flex-col items-center justify-center pt-[6rem] max-[360px]:pt-[6rem] md:flex-row md:h-full container flex-shrink">
+        <div className="flex flex-col justify-center px-6 max-[414px]:pb-0 max-[360px]:pb-[1rem] max-[391px]:pb-[0rem] h-1/4 max-w-screen-xl lg:w-[53%]">
           <motion.h1
             className="text-2xl lg:text-6xl font-bold"
             id="title"
@@ -86,7 +86,7 @@ function Main() {
           </motion.div>
         </div>
         <motion.div
-          className="max-w-screen-lg w-fit lg:w-[45%] md:items-center flex-shrink-[0.5] max-[414px]:w-[86%] max-[360px]:w-[55%]"
+          className="max-w-screen-lg w-fit lg:w-[45%] md:items-center flex-shrink max-[414px]:w-fit max-[360px]:w-[55%] "
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 1, duration: 0.8 }}
