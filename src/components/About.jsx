@@ -71,7 +71,7 @@ function About() {
   });
   return (
     <div className="grid grid-cols-12 grid-rows-3 w-full h-screen relative overflow-hidden pt-[6rem] m-auto bg-[#001122]">
-      <div className="order-1 col-start-2 col-end-8 row-span-2 overflow-auto items-center justify-center pl-[10%] pr-[3%] scrollbar-hide">
+      <div className="order-1 col-start-2 col-end-8 row-span-2 overflow-auto items-center justify-center pl-[10%] pr-[3%] scrollbar-hide max-lg:col-span-12 max-lg:px-6">
         <p className="text-4xl font-bold inline w-[11%] border-b-4 border-gray-500 text-[#f87171]">
           About
         </p>
@@ -118,7 +118,7 @@ function About() {
         animate={{ opacity: 1 }}
         transition={{ delay: 1.5, duration: 0.8 }}
       >
-        <div className="flex flex-row absolute bottom-0">
+        <div className="flex flex-row absolute bottom-20 z-10 w-full justify-evenly">
           {icon1.map(({ icon, style }, i) => (
             <img
               src={icon}
@@ -128,7 +128,7 @@ function About() {
             />
           ))}
         </div>
-        <div className="flex flex-row absolute bottom-0">
+        <div className="flex flex-row absolute justify-evenly bottom-6 z-10 w-full">
           {icon2.map(({ icon, style }, i) => (
             <img
               src={icon}
@@ -147,7 +147,7 @@ function About() {
             speed: 0.2,
             points: 3,
           }}
-          className="absolute bottom-0 h-full overflow-auto"
+          className="absolute bottom-0 h-full overflow-auto z-0"
         >
           <defs>
             <linearGradient id="gradient" gradientTransform="rotate(90)">
