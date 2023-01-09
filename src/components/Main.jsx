@@ -34,7 +34,7 @@ function Main() {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.3, duration: 0.8 }}
           >
-            Hola, I'am Peter, <br />
+            Hola, I am Peter, <br />
             <motion.span
               id="full-stack"
               initial={{ opacity: 0 }}
