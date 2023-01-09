@@ -17,6 +17,7 @@ import apollo from "../assets/apollo.svg";
 import Wave from "react-wavify";
 import "./hero.scss";
 import { motion } from "framer-motion";
+import { useMediaQuery } from "react-responsive";
 
 function About() {
   const icon1 = [
@@ -65,14 +66,17 @@ function About() {
     },
     { icon: apollo, style: "w-5 md:w-10 xl:w-[3rem] animate-float" },
   ];
+  const isLaptop = useMediaQuery({
+    query: "(min-width: 1024px)",
+  });
   return (
-    <div className="grid grid-cols-12 grid-rows-3 w-full h-screen relative overflow-hidden pt-[5.5rem] m-auto">
-      <div className="order-1 col-start-1 col-end-9 row-span-2 box-border border-4 border-pink-600 overflow-auto items-center justify-center pl-[9%] pr-[1%]">
+    <div className="grid grid-cols-12 grid-rows-3 w-full h-screen relative overflow-hidden pt-[6rem] m-auto bg-[#001122]">
+      <div className="order-1 col-start-2 col-end-8 row-span-2 overflow-auto items-center justify-center pl-[10%] pr-[3%] scrollbar-hide">
         <p className="text-4xl font-bold inline w-[11%] border-b-4 border-gray-500 text-[#f87171]">
           About
         </p>
         <motion.p
-          className="py-6 max-sm:text-xs text-justify max-[361px]:text-[0.65rem]"
+          className="py-6 max-sm:text-xs text-justify max-[361px]:text-[0.65rem] xl:text-xl text-white"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.5, duration: 0.8 }}
@@ -97,17 +101,19 @@ function About() {
           I can make a meaningful difference for the company.
         </motion.p>
       </div>
-      <div className="order-2 col-start-9 col-span-4 row-span-2 box-border border-4 border-pink-600 m-auto">
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 1, duration: 0.8 }}
-          className="home__img  max-lg:hidden flex items-center justify-center"
-        ></motion.div>
-      </div>
+      {isLaptop && (
+        <div className="order-2 col-start-8 col-span-5 row-span-2">
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 1, duration: 0.8 }}
+            className="home__img max-lg:hidden flex items-center justify-center m-auto mt-[5%]"
+          ></motion.div>
+        </div>
+      )}
 
       <motion.div
-        className="order-3 col-span-12 relative box-border border-4 border-pink-600"
+        className="order-3 col-span-12 relative"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 1.5, duration: 0.8 }}
