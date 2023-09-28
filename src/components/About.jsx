@@ -81,24 +81,7 @@ function About() {
           animate={{ opacity: 1 }}
           transition={{ delay: 0.5, duration: 0.8 }}
         >
-          As a full stack developer with a background in financial accounting
-          and a passion for streamlining processes, I have the technical
-          expertise and real-world business experience necessary to succeed in a
-          challenging and dynamic developer role. My technical skills include
-          JavaScript, React, and Python, and I have used these technologies to
-          build a variety of projects, including a user-friendly investment
-          portfolio management application (StockOverWatch) using the React and
-          Chartjs frameworks, and a mini e-commerce application (Jungle-rails)
-          built with Ruby on Rails. In addition to my proficiency in these
-          languages and frameworks, I am skilled in using PostgreSQL, Git, and
-          Firebase, and I have experience with testing frameworks such as Jest,
-          Storybook, and Cypress. In my current role as an accounts payable
-          specialist, I have developed VBA scripts that increased the efficiency
-          of client disbursement processes by 50%, and I have mentored and
-          trained new employees to improve productivity. I am always eager to
-          learn and stay up to date on the latest technologies, and I am excited
-          to bring my skills and experience to a full stack developer role where
-          I can make a meaningful difference for the company.
+          As a Software Developer specialized in both front-end and back-end technologies, I offer a balanced skill set that covers JavaScript, React, Redux, C#, and .NET. With a demonstrated history of cross-functional teamwork and agile development methodologies, I have a proven ability to craft scalable solutions and RESTful APIs. In my current role at TechPOS International Inc., I led the redesign of the Point of Sale interface using React and Material UI, significantly improving user experience and operational efficiency. I've also designed and implemented dynamic .NET endpoints complemented with Azure WebJobs, automating processes and cutting manual work time by 90%. I have been recognized for my close collaboration with QA and support teams, which has led to a 15% increase in customer satisfaction. My unique blend of technical acumen and practical experience in project management makes me an ideal candidate to contribute to a challenging new software development role.
         </motion.p>
       </div>
       {isLaptop && (
