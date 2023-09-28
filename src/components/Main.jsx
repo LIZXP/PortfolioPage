@@ -61,13 +61,7 @@ function Main() {
             animate={{ opacity: 1 }}
             transition={{ delay: 1.2, duration: 0.8 }}
           >
-            Motivated and detail-oriented Full stack developer with expertise in
-            JavaScript, React, and Python, seeking a challenging and dynamic
-            role where I can use my technical skills and real-world business
-            experience to create innovative solutions and drive positive impact.
-            Proven ability to streamline processes and prioritize business
-            functions, and a passion for continuously learning and staying up to
-            date on the latest technologies.
+            Highly skilled Software Developer with expertise in front-end and back-end technologies. Adept in JavaScript, React, Redux, C#, and .NET, with a proven ability to develop scalable solutions and RESTful APIs. Committed to cross-functional teamwork and agile development, looking to bring technical skills to a challenging new role.
           </motion.p>
           <motion.div
             initial={{ opacity: 0 }}
