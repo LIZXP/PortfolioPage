@@ -4,22 +4,31 @@ module.exports = {
   theme: {
     extend: {
       animation: {
-        float: "float 9s infinite",
+        float: "float 15s infinite",
         space: "space 9s ease-in-out infinite",
       },
       keyframes: {
         float: {
           "0%": {
+            transform: "translateY(0px) rotate(0deg)",
+          },
+          "16.5%": {
             transform: "translateY(-12px) rotate(20deg)",
-            timingFunction: "ease-in",
           },
           "33%": {
             transform: "translateY(18px) rotate(0deg)",
-            timingFunction: "ease-out",
+          },
+          "50%": {
+            transform: "translateY(-12px) rotate(20deg)",
+          },
+          "66.5%": {
+            transform: "translateY(18px) rotate(0deg)",
+          },
+          "83%": {
+            transform: "translateY(-12px) rotate(20deg)",
           },
           "100%": {
-            transform: "translateY(-12px) rotate(20deg)",
-            timingFunction: "ease-in-out",
+            transform: "translateY(0px) rotate(0deg)",
           },
         },
         space: {
