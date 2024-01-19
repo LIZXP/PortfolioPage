@@ -21,8 +21,7 @@ function Portfolio() {
         "Finnhub API",
       ],
       disc: "StockOverWatch is a user-friendly software application that enables users to manage a simple investment portfolio without the risk of losing real currency. The application's front end is built using the React and Chartjs frameworks, and it utilizes the Finnhub API to retrieve current and historical stock data. The backend is handled using the Firebase platform.",
-      git: "https://github.com/LIZXP/StockOverWatch/tree/main/stockoverwatch",
-      site: "https://stockoverwatch.netlify.app/",
+      git: "https://github.com/LIZXP/StockOverWatch/tree/main/stockoverwatch"
     },
     {
       src: jun,
